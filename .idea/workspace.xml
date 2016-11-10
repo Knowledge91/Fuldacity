@@ -21,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fuldacity/fuldacity/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="420">
-              <caret line="28" column="60" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
+              <caret line="28" column="52" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -51,7 +51,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="02_python.config" pinned="false" current-in-tab="true">
+      <file leaf-file-name="02_python.config" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.ebextensions/02_python.config">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
@@ -110,8 +110,8 @@
         <option value="$PROJECT_DIR$/fuldacity/events/urls.py" />
         <option value="$PROJECT_DIR$/fuldacity/events/views.py" />
         <option value="$PROJECT_DIR$/fuldacity/events/models.py" />
-        <option value="$PROJECT_DIR$/fuldacity/fuldacity/settings.py" />
         <option value="$PROJECT_DIR$/.ebextensions/02_python.config" />
+        <option value="$PROJECT_DIR$/fuldacity/fuldacity/settings.py" />
       </list>
     </option>
   </component>
@@ -521,14 +521,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fuldacity/fuldacity/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="60" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.ebextensions/01_packages.config">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -541,6 +533,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fuldacity/fuldacity/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="52" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
           <folding />
         </state>
       </provider>
