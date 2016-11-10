@@ -25,7 +25,9 @@ SECRET_KEY = '4#7t!1)^*rzby$g5z@xbw^!z_0stnvszn5r#3g=m%@)2=bvcmw'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'http://fuldacity-dev.eu-central-1.elasticbeanstalk.com/'
+]
 
 
 # Application definition
