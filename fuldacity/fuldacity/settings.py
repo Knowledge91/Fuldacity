@@ -26,19 +26,21 @@ SECRET_KEY = '4#7t!1)^*rzby$g5z@xbw^!z_0stnvszn5r#3g=m%@)2=bvcmw'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'fuldacity-dev.eu-central-1.elasticbeanstalk.com'
+    'fuldacity-dev.eu-central-1.elasticbeanstalk.com',
+    '127.0.0.1'
 ]
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'events.apps.EventsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
+    'django.contrib.staticfiles'
 ]
 
 MIDDLEWARE = [
