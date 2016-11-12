@@ -1,0 +1,100 @@
+{% extends "events/base.html" %}
+
+{% load static %}
+{% load widget_tweaks %}
+
+{% block css %}
+    <!-- select2 bootstrap -->
+	<link rel="stylesheet" href="http://vitalets.github.io/x-editable/assets/select2/select2.css" type="text/css" />
+	<!-- Bootstrap Editable Plugin -->
+	<link rel="stylesheet" href="{% static 'events/css/bs-editable.css' %}" type="text/css" />
+	<!-- Bootstrap Typeaheadjs Plugin -->
+	<link href="http://vitalets.github.io/x-editable/assets/x-editable/inputs-ext/typeaheadjs/lib/typeahead.js-bootstrap.css" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <!-- Content
+    ============================================= -->
+    <section id="content">
+
+        <div class="content-wrap">
+
+            <div class="container clearfix">
+
+                <!-- Portfolio Single Image
+                ============================================= -->
+                <div class="col_two_third portfolio-single-image nobottommargin">
+                    <a href="#"><img src="../../{{ event.image.url }}" alt=""></a>
+                    <form id="imgForm" method="post" action="/event/{{ event.id }}/image/" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        {% render_field form.image onchange="autoSubmit()" %}
+                    </form>
+                </div><!-- .portfolio-single-image end -->
+
+                <!-- Portfolio Single Content
+                ============================================= -->
+                <div class="col_one_third portfolio-single-content col_last nobottommargin">
+
+                    <!-- Portfolio Single - Description
+                    ============================================= -->
+                    <div class="fancy-title title-bottom-border">
+                        <h2><a href="#" class="bt-comments" data-type="text" data-pk="{{ event.id  }}" data-name="name" data-url="event/{{ event.id }}/" data-params="{csrfmiddlewaretoken:'{{csrf_token}}'}">{{ event.name }}</a></h2>
+                    </div>
+                    <a href="#" class="bt-comments" data-type="textarea" data-pk="{{ event.id }}" data-name="beschreibung" data-url="event/{{ event.id }}/" data-params="{csrfmiddlewaretoken:'{{csrf_token}}'}" >{{ event.beschreibung }}</a>
+                    <!-- Portfolio Single - Description End -->
+
+                    <div class="line"></div>
+
+                    <!-- Portfolio Single - Meta
+                    ============================================= -->
+                    <ul class="portfolio-meta bottommargin">
+                        <li><span><i class="icon-user"></i>Author:</span> {{ event.author }}</li>
+                        <li><span><i class="icon-calendar3"></i>Erstellt:</span> {{ event.pub_date }}</li>
+                    </ul>
+                    <!-- Portfolio Single - Meta End -->
+
+                </div><!-- .portfolio-single-content end -->
+
+                <div class="clear"></div>
+
+                <div class="divider divider-center"><i class="icon-circle"></i></div>
+
+
+            </div>
+
+        </div>
+
+    </section><!-- #content end -->
+{% endblock content %}
+
+{% block javascript %}
+<script type="text/javascript" src="{% static 'events/js/moment.js' %}"></script>
+
+	<!-- select2 bootstrap -->
+	<script type="text/javascript" src="http://vitalets.github.io/x-editable/assets/select2/select2.js"></script>
+
+	<!-- Bootstrap Editable Plugin -->
+	<script type="text/javascript" src="{% static 'events/js/bs-editable.js' %}"></script>
+
+	<!-- Bootstrap Typeaheadjs Plugin -->
+	<script src="http://vitalets.github.io/x-editable/assets/x-editable/inputs-ext/typeaheadjs/lib/typeahead.js"></script>
+	<script src="http://vitalets.github.io/x-editable/assets/x-editable/inputs-ext/typeaheadjs/typeaheadjs.js"></script>
+
+	<!-- Date & Time Picker JS -->
+	<script type="text/javascript" src="{% static 'events/js/datepicker.js' %}"></script>
+	<script type="text/javascript" src="{% static 'events/js/timepicker.js' %}"></script>
+
+	<script>
+        $.fn.editable.defaults.mode = 'inline';
+
+		$(document).ready(function() {
+			$('.bt-comments').editable({
+				showbuttons: true
+			});
+		});
+
+        function autoSubmit() {
+            $('#imgForm').submit();
+        }
+	</script>
+{% endblock %}

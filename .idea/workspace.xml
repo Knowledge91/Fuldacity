@@ -2,7 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f2d35a2-9e8c-40eb-b1a0-81e971d3e66b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.ebextensions/02_python.config" afterPath="$PROJECT_DIR$/.ebextensions/02_python.config" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fuldacity/events/forms.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fuldacity/events/static/events/css/bs-editable.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fuldacity/events/static/events/css/design.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fuldacity/events/static/events/js/bs-datatable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fuldacity/events/static/events/js/bs-editable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fuldacity/events/static/events/js/datepicker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fuldacity/events/static/events/js/moment.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fuldacity/events/static/events/js/timepicker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fuldacity/events/templates/events/base.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fuldacity/events/templates/events/component-editable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fuldacity/events/templates/events/detail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fuldacity/events/templates/events/eventEditor.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fuldacity/events/templates/events/event_confirm_delete.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fuldacity/events/templates/events/event_form.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fuldacity/events/templates/events/login.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/migrations/0001_initial.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fuldacity/events/admin.py" afterPath="$PROJECT_DIR$/fuldacity/events/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fuldacity/events/models.py" afterPath="$PROJECT_DIR$/fuldacity/events/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fuldacity/events/templates/events/list.html" afterPath="$PROJECT_DIR$/fuldacity/events/templates/events/list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fuldacity/events/urls.py" afterPath="$PROJECT_DIR$/fuldacity/events/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fuldacity/events/views.py" afterPath="$PROJECT_DIR$/fuldacity/events/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fuldacity/fuldacity/settings.py" afterPath="$PROJECT_DIR$/fuldacity/fuldacity/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fuldacity/fuldacity/urls.py" afterPath="$PROJECT_DIR$/fuldacity/fuldacity/urls.py" />
     </list>
     <ignored path="fuldacityProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,114 +46,106 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fuldacity/events/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="43" column="49" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fuldacity/events/templates/events/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="66" selection-start-line="18" selection-start-column="66" selection-end-line="18" selection-end-column="66" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="list.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fuldacity/events/templates/events/list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="52" column="49" selection-start-line="52" selection-start-column="49" selection-end-line="52" selection-end-column="49" />
+            <state relative-caret-position="270">
+              <caret line="18" column="77" selection-start-line="18" selection-start-column="77" selection-end-line="18" selection-end-column="77" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="eventEditor.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/fuldacity/events/templates/events/eventEditor.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="669">
+              <caret line="77" column="41" selection-start-line="77" selection-start-column="41" selection-end-line="77" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bs-datatable.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fuldacity/events/static/events/js/bs-datatable.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="251">
+              <caret line="4" column="17969" selection-start-line="4" selection-start-column="17969" selection-end-line="4" selection-end-column="17969" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fuldacity/events/static/events/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="design.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fuldacity/events/static/events/css/design.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.py" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/local/lib/python2.7/site-packages/django/views/generic/base.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2205">
+              <caret line="157" column="43" selection-start-line="157" selection-start-column="43" selection-end-line="157" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="event_form.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fuldacity/events/templates/events/event_form.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="89" selection-start-line="27" selection-start-column="89" selection-end-line="27" selection-end-column="89" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fuldacity/events/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
               <folding>
-                <marker date="1478812574000" expanded="false" signature="15658:15663" ph="&amp;" />
-                <marker date="1478812574000" expanded="false" signature="15740:15827" ph="..." />
-                <marker date="1478812574000" expanded="false" signature="18722:18743" ph="..." />
-                <marker date="1478812574000" expanded="false" signature="19592:19597" ph="&amp;" />
-                <marker date="1478812574000" expanded="false" signature="20382:20403" ph="..." />
-                <marker date="1478812574000" expanded="false" signature="20604:20623" ph="..." />
-                <marker date="1478812574000" expanded="false" signature="20783:20815" ph="..." />
-                <marker date="1478812574000" expanded="false" signature="21034:21053" ph="..." />
-                <marker date="1478812574000" expanded="false" signature="21203:21235" ph="..." />
-                <marker date="1478812574000" expanded="false" signature="21703:21709" ph="©" />
-                <marker date="1478812574000" expanded="false" signature="23622:23630" ph="·" />
-                <marker date="1478812574000" expanded="false" signature="23708:23716" ph="·" />
+                <element signature="e#0#32#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="createsu.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fuldacity/events/management/commands/createsu.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="88" selection-start-line="8" selection-start-column="88" selection-end-line="8" selection-end-column="88" />
-              <folding>
-                <element signature="e#0#51#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fuldacity/events/management/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__,py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fuldacity/events/management/commands/__init__,py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="02_python.config" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.ebextensions/02_python.config">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="74" selection-start-line="5" selection-start-column="74" selection-end-line="5" selection-end-column="74" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="widget-link-dark.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fuldacity/events/static/events/css/images/icons/widget-link-dark.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dark.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fuldacity/events/static/events/css/dark.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="functions.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fuldacity/events/static/events/js/functions.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="responsive.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fuldacity/events/static/events/css/responsive.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="animate.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fuldacity/events/static/events/css/animate.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -140,8 +155,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -152,17 +168,33 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.ebextensions/01_packages.config" />
-        <option value="$PROJECT_DIR$/fuldacity/fuldacity/urls.py" />
-        <option value="$PROJECT_DIR$/fuldacity/events/models.py" />
         <option value="$PROJECT_DIR$/fuldacity/events/templates/events/index..html" />
         <option value="$PROJECT_DIR$/fuldacity/events/templates/events/index.html" />
-        <option value="$PROJECT_DIR$/fuldacity/fuldacity/settings.py" />
-        <option value="$PROJECT_DIR$/fuldacity/events/urls.py" />
-        <option value="$PROJECT_DIR$/fuldacity/events/views.py" />
-        <option value="$PROJECT_DIR$/fuldacity/events/templates/events/list.html" />
         <option value="$PROJECT_DIR$/fuldacity/events/management/commands/createsu.py" />
         <option value="$PROJECT_DIR$/fuldacity/events/management/__init__.py" />
         <option value="$PROJECT_DIR$/.ebextensions/02_python.config" />
+        <option value="$PROJECT_DIR$/fuldacity/events/migrations/0001_initial.py" />
+        <option value="$PROJECT_DIR$/fuldacity/events/admin.py" />
+        <option value="$PROJECT_DIR$/fuldacity/fuldacity/urls.py" />
+        <option value="$PROJECT_DIR$/fuldacity/events/templates/events/base_site.html" />
+        <option value="$PROJECT_DIR$/fuldacity/events/templates/admin/base_site.html" />
+        <option value="$PROJECT_DIR$/fuldacity/events/templates/admin/base.html" />
+        <option value="$PROJECT_DIR$/fuldacity/events/templates/events/veranstalter.html" />
+        <option value="$PROJECT_DIR$/fuldacity/events/templates/events/detail.html" />
+        <option value="$PROJECT_DIR$/fuldacity/events/templates/events/login.html" />
+        <option value="$PROJECT_DIR$/fuldacity/events/templates/events/user.html" />
+        <option value="$PROJECT_DIR$/fuldacity/fuldacity/settings.py" />
+        <option value="$PROJECT_DIR$/fuldacity/events/templates/events/eventEditorDetail.html" />
+        <option value="$PROJECT_DIR$/fuldacity/events/templates/events/event_confirm_delete.html" />
+        <option value="$PROJECT_DIR$/fuldacity/events/models.py" />
+        <option value="$PROJECT_DIR$/fuldacity/events/forms.py" />
+        <option value="$PROJECT_DIR$/fuldacity/events/templates/events/event_form.html" />
+        <option value="$PROJECT_DIR$/fuldacity/events/urls.py" />
+        <option value="$PROJECT_DIR$/fuldacity/events/views.py" />
+        <option value="$PROJECT_DIR$/fuldacity/events/templates/events/list.html" />
+        <option value="$PROJECT_DIR$/fuldacity/events/static/events/css/design.css" />
+        <option value="$PROJECT_DIR$/fuldacity/events/templates/events/base.html" />
+        <option value="$PROJECT_DIR$/fuldacity/events/templates/events/eventEditor.html" />
       </list>
     </option>
   </component>
@@ -201,6 +233,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -313,7 +347,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="management" />
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="events" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -335,11 +377,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="management" />
+              <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="commands" />
+              <option name="myItemId" value="events" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -353,14 +395,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value=".ebextensions" />
+              <option name="myItemId" value="fuldacity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="events" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="events" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -371,16 +427,20 @@
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="FullScreen" value="true" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/fuldacity/events/static/events/css" />
+      <recent name="$PROJECT_DIR$/fuldacity/events/static/events/js" />
+      <recent name="$PROJECT_DIR$/fuldacity/events/templates/events" />
+      <recent name="$PROJECT_DIR$/fuldacity/events/templates/admin" />
       <recent name="$PROJECT_DIR$/fuldacity/events/static/events/css/images/icons" />
-      <recent name="$PROJECT_DIR$/fuldacity/events/static/events/css/fonts" />
-      <recent name="$PROJECT_DIR$/fuldacity/events/static/events/images" />
-      <recent name="$PROJECT_DIR$/fuldacity/events/static/events/css/images" />
-      <recent name="$PROJECT_DIR$/fuldacity/events/static/events/img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/fuldacity/events/templates/admin" />
+      <recent name="$PROJECT_DIR$/fuldacity/static" />
+      <recent name="$PROJECT_DIR$/fuldacity" />
       <recent name="$PROJECT_DIR$/fuldacity/events/static/events/images" />
       <recent name="$PROJECT_DIR$/fuldacity/events" />
     </key>
@@ -654,77 +714,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/fuldacity/events/templates/events/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1478812574000" expanded="false" signature="15658:15663" ph="&amp;" />
-            <marker date="1478812574000" expanded="false" signature="15740:15827" ph="..." />
-            <marker date="1478812574000" expanded="false" signature="18722:18743" ph="..." />
-            <marker date="1478812574000" expanded="false" signature="19592:19597" ph="&amp;" />
-            <marker date="1478812574000" expanded="false" signature="20382:20403" ph="..." />
-            <marker date="1478812574000" expanded="false" signature="20604:20623" ph="..." />
-            <marker date="1478812574000" expanded="false" signature="20783:20815" ph="..." />
-            <marker date="1478812574000" expanded="false" signature="21034:21053" ph="..." />
-            <marker date="1478812574000" expanded="false" signature="21203:21235" ph="..." />
-            <marker date="1478812574000" expanded="false" signature="21703:21709" ph="©" />
-            <marker date="1478812574000" expanded="false" signature="23622:23630" ph="·" />
-            <marker date="1478812574000" expanded="false" signature="23708:23716" ph="·" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fuldacity/events/static/events/css/images/icons/widget-link-dark.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fuldacity/events/static/events/css/dark.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fuldacity/events/static/events/js/functions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fuldacity/events/static/events/css/responsive.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fuldacity/events/static/events/css/animate.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fuldacity/events/static/events/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fuldacity/events/static/events/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -733,7 +726,7 @@
         <state relative-caret-position="150">
           <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -745,17 +738,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fuldacity/fuldacity/urls.py">
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/templates/events/portfolio-3-notitle-right-sidebar.html" />
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/static/events/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fuldacity/events/models.py">
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/static/events/css/animate.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="55" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/static/events/css/responsive.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/static/events/js/functions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/static/events/css/dark.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/templates/events/portfolio-3.html" />
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/static/events/css/images/icons/widget-link-dark.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/management/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/management/commands/__init__,py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/management/commands/createsu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="88" selection-start-line="8" selection-start-column="88" selection-end-line="8" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.ebextensions/02_python.config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="74" selection-start-line="5" selection-start-column="74" selection-end-line="5" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" column="114" selection-start-line="18" selection-start-column="114" selection-end-line="18" selection-end-column="114" />
         </state>
       </provider>
     </entry>
@@ -766,35 +822,184 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fuldacity/Captura_de_pantalla_2016-11-11_a_las_9.10.47.png" />
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/templates/events/portfolio-single.html" />
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/templates/admin/index.html" />
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/templates/admin/base_site.html" />
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/templates/admin/base.html" />
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/templates/events/component-datatable.html" />
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/templates/events/login-register-2.html" />
     <entry file="file://$PROJECT_DIR$/fuldacity/fuldacity/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="36" column="31" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
+        <state relative-caret-position="1080">
+          <caret line="72" column="1" selection-start-line="72" selection-start-column="1" selection-end-line="72" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/site-packages/django/views/generic/list.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="153" column="42" selection-start-line="153" selection-start-column="42" selection-end-line="153" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/templates/events/eventEditorDetail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="36" column="95" selection-start-line="36" selection-start-column="95" selection-end-line="36" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fuldacity/fuldacity/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/templates/events/event_confirm_delete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/templates/events/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="54" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/static/events/js/bs-editable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/static/events/js/datepicker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/static/events/css/bs-editable.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/templates/events/component-editable.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11565">
+          <caret line="771" column="40" selection-start-line="771" selection-start-column="0" selection-end-line="772" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#15#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/site-packages/django/views/generic/detail.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1575">
+          <caret line="111" column="42" selection-start-line="111" selection-start-column="42" selection-end-line="111" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/templates/events/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#24#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fuldacity/fuldacity/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/templates/events/event_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="89" selection-start-line="27" selection-start-column="89" selection-end-line="27" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/site-packages/django/views/generic/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2205">
+          <caret line="157" column="43" selection-start-line="157" selection-start-column="43" selection-end-line="157" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fuldacity/events/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fuldacity/events/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+        <state relative-caret-position="150">
+          <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fuldacity/events/templates/events/portfolio-3-notitle-right-sidebar.html" />
-    <entry file="file://$PROJECT_DIR$/fuldacity/events/static/events/css/bootstrap.css">
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="225">
+          <caret line="43" column="49" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/templates/events/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="77" selection-start-line="18" selection-start-column="77" selection-end-line="18" selection-end-column="77" />
           <folding />
         </state>
       </provider>
@@ -807,95 +1012,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fuldacity/events/static/events/css/animate.css">
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/static/events/css/design.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="15">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fuldacity/events/static/events/css/responsive.css">
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/templates/events/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="270">
+          <caret line="18" column="66" selection-start-line="18" selection-start-column="66" selection-end-line="18" selection-end-column="66" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fuldacity/events/static/events/js/functions.js">
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/static/events/js/bs-datatable.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="251">
+          <caret line="4" column="17969" selection-start-line="4" selection-start-column="17969" selection-end-line="4" selection-end-column="17969" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fuldacity/events/static/events/css/dark.css">
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/templates/events/eventEditor.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fuldacity/events/templates/events/portfolio-3.html" />
-    <entry file="file://$PROJECT_DIR$/fuldacity/events/static/events/css/images/icons/widget-link-dark.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fuldacity/events/templates/events/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="52" column="49" selection-start-line="52" selection-start-column="49" selection-end-line="52" selection-end-column="49" />
-          <folding>
-            <marker date="1478812574000" expanded="false" signature="15658:15663" ph="&amp;" />
-            <marker date="1478812574000" expanded="false" signature="15740:15827" ph="..." />
-            <marker date="1478812574000" expanded="false" signature="18722:18743" ph="..." />
-            <marker date="1478812574000" expanded="false" signature="19592:19597" ph="&amp;" />
-            <marker date="1478812574000" expanded="false" signature="20382:20403" ph="..." />
-            <marker date="1478812574000" expanded="false" signature="20604:20623" ph="..." />
-            <marker date="1478812574000" expanded="false" signature="20783:20815" ph="..." />
-            <marker date="1478812574000" expanded="false" signature="21034:21053" ph="..." />
-            <marker date="1478812574000" expanded="false" signature="21203:21235" ph="..." />
-            <marker date="1478812574000" expanded="false" signature="21703:21709" ph="©" />
-            <marker date="1478812574000" expanded="false" signature="23622:23630" ph="·" />
-            <marker date="1478812574000" expanded="false" signature="23708:23716" ph="·" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fuldacity/events/management/commands/createsu.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="88" selection-start-line="8" selection-start-column="88" selection-end-line="8" selection-end-column="88" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fuldacity/events/management/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fuldacity/events/management/commands/__init__,py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.ebextensions/02_python.config">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="74" selection-start-line="5" selection-start-column="74" selection-end-line="5" selection-end-column="74" />
+        <state relative-caret-position="669">
+          <caret line="77" column="41" selection-start-line="77" selection-start-column="41" selection-end-line="77" selection-end-column="41" />
           <folding />
         </state>
       </provider>

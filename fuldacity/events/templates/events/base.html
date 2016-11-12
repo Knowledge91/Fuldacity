@@ -1,0 +1,138 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="SemiColonWeb" />
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="{% static 'events/css/bootstrap.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static 'events/css/style.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static 'events/css/dark.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static 'events/css/font-icons.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static 'events/css/animate.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static 'events/css/magnific-popup.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static 'events/css/design.css' %}" type="text/css" />
+
+	<link rel="stylesheet" href="{% static 'events/css/responsive.css' %}" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<!--[if lt IE 9]>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+
+	{% block css %}{% endblock %}
+
+	<!-- Document Title
+	============================================= -->
+	<title>Portfolio - 3 Columns Right Sidebar | Canvas</title>
+
+</head>
+
+<body class="stretched">
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+
+
+        <!-- Top Bar
+		============================================= -->
+		<div id="top-bar">
+
+			<div class="container clearfix">
+
+				<div class="col_half nobottommargin">
+
+					<!-- Top Links
+					============================================= -->
+					<div class="top-links">
+						<ul>
+							<li><a href="/">Home</a></li>
+                            {% if request.user.is_authenticated %}
+                                <li><a href="/eventEditor">Meine Events</a></li>
+                                <li><a href="/logout">Logout</a></li>
+                            {% else %}
+                                <li><a href="/login">Login</a></li>
+                            {% endif %}
+						</ul>
+					</div><!-- .top-links end -->
+
+				</div>
+
+				<div class="col_half fright col_last nobottommargin">
+
+					<!-- Top Social
+					============================================= -->
+					<div id="top-social">
+						<ul>
+							<li><a href="#" class="si-facebook"><span class="ts-icon"><i class="icon-facebook"></i></span><span class="ts-text">Facebook</span></a></li>
+							<li><a href="#" class="si-twitter"><span class="ts-icon"><i class="icon-twitter"></i></span><span class="ts-text">Twitter</span></a></li>
+							<li><a href="#" class="si-instagram"><span class="ts-icon"><i class="icon-instagram2"></i></span><span class="ts-text">Instagram</span></a></li>
+							<li><a href="tel:+91.11.85412542" class="si-call"><span class="ts-icon"><i class="icon-call"></i></span><span class="ts-text">+91.11.85412542</span></a></li>
+							<li><a href="mailto:info@canvas.com" class="si-email3"><span class="ts-icon"><i class="icon-envelope-alt"></i></span><span class="ts-text">info@canvas.com</span></a></li>
+						</ul>
+					</div><!-- #top-social end -->
+
+				</div>
+
+			</div>
+
+		</div><!-- #top-bar end -->
+
+       <!-- Header
+		============================================= -->
+		<header id="header" class="no-sticky">
+
+			<div id="header-wrap">
+
+				<div class="container clearfix">
+
+					<!-- Logo
+					============================================= -->
+					<div id="logo" class="divcenter">
+						<a href="index.php" class="standard-logo" data-dark-logo="{% static 'events/img/logo.png' %}"><img class="divcenter" src="{% static 'events/img/logo.png' %}" alt="Canvas Logo"></a>
+						<a href="index.php" class="retina-logo" data-dark-logo="{% static 'events/img/logo@2x.png' %}"><img class="divcenter" src="{% static 'events/img/logo@2x.png' %}" alt="Canvas Logo"></a>
+				        <!-- Top Search
+						============================================= -->
+						<!--<div id="top-search">-->
+							<!--<a href="#" id="top-search-trigger"><i class="icon-search3"></i><i class="icon-line-cross"></i></a>-->
+							<!--<form action="search.html" method="get">-->
+								<!--<input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter..">-->
+							<!--</form>-->
+						<!--</div>&lt;!&ndash; #top-search end &ndash;&gt;-->
+                    </div><!-- #logo end -->
+
+				</div>
+
+			</div>
+
+
+
+		</header><!-- #header end -->
+
+        {% block content %}{% endblock %}
+
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	<!-- External JavaScripts
+	============================================= -->
+	<script type="text/javascript" src="{% static 'events/js/jquery.js' %}"></script>
+	<script type="text/javascript" src="{% static 'events/js/plugins.js' %}"></script>
+
+     <!-- Footer Scripts
+	============================================= -->
+	<script type="text/javascript" src="{% static 'events/js/functions.js' %}"></script>
+
+    {% block javascript %}{% endblock %}
+
+
+</body>
+</html>
