@@ -4,8 +4,9 @@ from django.http import HttpResponseRedirect
 from django.contrib.auth import logout, authenticate, login
 from django.shortcuts import redirect, render, get_object_or_404
 from django.urls import reverse_lazy
+from datetime import datetime
 
-from .models import Event
+from .models import Event, Kategorie
 from .forms import LoginForm, EventForm
 
 class IndexView(generic.ListView):
@@ -13,7 +14,7 @@ class IndexView(generic.ListView):
     context_object_name = 'event_list'
 
     def get_queryset(self):
-        return Event.objects.order_by('-pub_date')[:5]
+        return Event.objects.all()
 
 
 class DetailView(generic.DetailView):
@@ -35,6 +36,27 @@ class EventCreate(View):
         Event.objects.create()
         return redirect('events:event-admin')
 
+class EventErstellen(View):
+    def get(self, request):
+        return render(request, 'events/erstellen.html')
+    def post(self, request):
+        bild = request.FILES['bild']
+        name = request.POST['name']
+        kategorie = Kategorie.objects.get(name=request.POST['kategorie'])
+        beginn = datetime.strptime(request.POST['beginnDatum'] + ' ' + request.POST['beginnZeit'], '%d.%m.%Y %H:%M')
+        ende = datetime.strptime(request.POST['endeDatum'] + ' ' + request.POST['endeZeit'], '%d.%m.%Y %H:%M')
+        beschreibung = request.POST['beschreibung']
+
+        event = Event(name=name, kategorie=kategorie, beginn=beginn, ende=ende, beschreibung=beschreibung, bild=bild);
+
+        event.save()
+        # with open('static/images/events/'+ str(event.pk) +'.jpg', 'wb+') as destination:
+        #     for chunk in bild.chunks():
+        #         destination.write(chunk)
+        # event.bild = 'static/images/events/'+ str(event.pk) +'.jpg'
+        # event.save()
+
+        return redirect('events:event-erstellen')
 
 class EventUpdate(View):
 

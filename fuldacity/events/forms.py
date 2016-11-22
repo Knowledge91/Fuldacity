@@ -9,4 +9,5 @@ class LoginForm(forms.Form):
 class EventForm(forms.Form):
     name = forms.CharField(required=False)
     beschreibung = forms.CharField(widget=forms.Textarea, required=False)
+    beginn = forms.DateField(input_formats='%d.%m.%Y')
     image = forms.ImageField()

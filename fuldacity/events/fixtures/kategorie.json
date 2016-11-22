@@ -1,0 +1,16 @@
+[
+  {
+    "model": "events.kategorie",
+    "pk": 1,
+    "fields": {
+      "name": "Club"
+    }
+  },
+  {
+    "model": "events.kategorie",
+    "pk": 2,
+    "fields": {
+      "name": "Bar"
+    }
+  }
+]

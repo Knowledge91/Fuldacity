@@ -4,7 +4,7 @@
     <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="ignoredPackages">
         <value>
-          <list size="20">
+          <list size="25">
             <item index="0" class="java.lang.String" itemvalue="pathspec" />
             <item index="1" class="java.lang.String" itemvalue="botocore" />
             <item index="2" class="java.lang.String" itemvalue="PyYAML" />
@@ -25,6 +25,11 @@
             <item index="17" class="java.lang.String" itemvalue="docker-py" />
             <item index="18" class="java.lang.String" itemvalue="dockerpty" />
             <item index="19" class="java.lang.String" itemvalue="docutils" />
+            <item index="20" class="java.lang.String" itemvalue="django-widget-tweaks" />
+            <item index="21" class="java.lang.String" itemvalue="s3transfer" />
+            <item index="22" class="java.lang.String" itemvalue="boto" />
+            <item index="23" class="java.lang.String" itemvalue="django-storages" />
+            <item index="24" class="java.lang.String" itemvalue="Pillow" />
           </list>
         </value>
       </option>
