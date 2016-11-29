@@ -1,4 +1,4 @@
-angular.module('StarterApp', ['ngMaterial', 'ngMessages', 'ngResource', 'ngRoute',  'eventList']);
+angular.module('StarterApp', ['ngMaterial', 'ngMessages', 'ngResource', 'ngRoute',  'toolbar', 'eventList']);
 
 var LoginDialogController = (function() {
     function LoginDialogController($mdDialog, $resource) {
@@ -12,11 +12,6 @@ var LoginDialogController = (function() {
         this.$mdDialog.cancel();
     };
     LoginDialogController.prototype.login = function () {
-//                        var User = this.$resource('/rest-auth/login/', {});
-//                        User.username = 'test';
-//                        User.password = 'test1234';
-//                        console.log(User);
-
        var Todo = this.$resource('/rest-auth/login/');
 
         //create a todo

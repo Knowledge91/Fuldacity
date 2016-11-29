@@ -10,7 +10,7 @@ from .models import Event, Kategorie
 from .forms import LoginForm, EventForm
 
 class IndexView(generic.ListView):
-    template_name = 'events/list.html'
+    template_name = 'events/base.html'
     context_object_name = 'event_list'
 
     def get_queryset(self):
@@ -18,12 +18,6 @@ class IndexView(generic.ListView):
 
 
 
-class RegisterView(generic.ListView):
-    template_name = 'events/register.html'
-    context_object_name = 'event_list'
-
-    def get_queryset(self):
-        return Event.objects.all()
 
 
 

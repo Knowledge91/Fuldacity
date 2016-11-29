@@ -1,1 +1,1 @@
-angular.module('eventList', ['ngMaterial', 'ngMessages', 'ngResource']);
+angular.module('eventList', []);
