@@ -1,0 +1,52 @@
+
+/* Event-List */
+.pointer {
+    cursor: pointer;
+}
+
+.searchbar {
+  padding: 16px;
+  border-radius: 2px;
+  text-align: center;
+  background-color: rgba(255,255,255,.3);
+  border: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+}
+.searchbar.focus {
+  background-color: white;
+  text-align: left;
+  color: #767676;
+}
+.searchbar::-webkit-input-placeholder {
+    color: white;
+}
+.searchbar::-moz-placeholder {
+     color: white;
+}
+.searchbar:-moz-placeholder {   /* Older versions of Firefox */
+     color: white;
+}
+.searchbar:-ms-input-placeholder {
+    color: white;
+}
+
+md-card-content .price {
+    padding: 10px;
+    border-radius: 2px;
+    color: white;
+}
+
+i {
+    vertical-align: middle !important;
+    font-size: 16px !important;
+}
+/*-------------------------------------------------------------------------*/
+
+
+/* Login */
+#login-dialog {
+  max-width: 90%;
+  width: 500px;
+}

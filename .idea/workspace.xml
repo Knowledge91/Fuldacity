@@ -2,124 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f2d35a2-9e8c-40eb-b1a0-81e971d3e66b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fuldacity/static/bower_components/angular/angular.min.js.gzip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fuldacity/.bowerrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fuldacity/authentication/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fuldacity/authentication/apps.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fuldacity/authentication/migrations/0001_initial.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fuldacity/authentication/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fuldacity/authentication/permissions.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fuldacity/authentication/serializers.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fuldacity/authentication/services/authentication.service.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fuldacity/authentication/templates/register.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fuldacity/authentication/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fuldacity/authentication/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fuldacity/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fuldacity/custom_storages.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fuldacity/events/fixtures/kategorie.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fuldacity/static/bower_components/angular/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fuldacity/static/bower_components/angular/LICENSE.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fuldacity/static/bower_components/angular/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fuldacity/static/bower_components/angular/angular-csp.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fuldacity/static/bower_components/angular/angular.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fuldacity/static/bower_components/angular/angular.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fuldacity/static/bower_components/angular/angular.min.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fuldacity/static/bower_components/angular/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fuldacity/static/bower_components/angular/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fuldacity/static/bower_components/angular/package.json" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/management/commands/createsu.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/migrations/0002_event_user.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/migrations/0003_auto_20161111_0724.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/migrations/0004_auto_20161111_0754.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/migrations/0005_event_image.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/migrations/0006_auto_20161111_1031.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/migrations/0007_auto_20161112_1144.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/static/events/css/animate.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/static/events/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/static/events/css/bs-editable.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/static/events/css/dark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/static/events/css/design.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/static/events/css/font-icons.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/static/events/css/fonts/font-icons.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/static/events/css/fonts/font-icons.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/static/events/css/fonts/lined-icons.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/static/events/css/fonts/lined-icons.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/static/events/css/images/icons/widget-link-dark.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/static/events/css/images/icons/widget-link-dark@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/static/events/css/images/icons/widget-link.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/static/events/css/images/icons/widget-link@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/static/events/css/images/preloader.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/static/events/css/magnific-popup.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/static/events/css/responsive.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/static/events/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/static/events/images/preloader-dark.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/static/events/images/preloader-dark@2x.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/static/events/images/preloader.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/static/events/images/preloader@2x.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/static/events/img/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/static/events/img/logo@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/static/events/img/portfolio/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/static/events/img/portfolio/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/static/events/img/portfolio/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/static/events/img/portfolio/4-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/static/events/img/portfolio/4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/static/events/img/portfolio/5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/static/events/img/portfolio/6-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/static/events/img/portfolio/6-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/static/events/img/portfolio/6-3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/static/events/img/portfolio/6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/static/events/img/portfolio/7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/static/events/img/portfolio/8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/static/events/img/portfolio/9-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/static/events/img/portfolio/9-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/static/events/img/portfolio/9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/static/events/js/bs-datatable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/static/events/js/bs-editable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/static/events/js/datepicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/static/events/js/functions.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/static/events/js/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/static/events/js/moment.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/static/events/js/plugins.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/static/events/js/timepicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/templates/events/component-editable.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/templates/events/detail.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/templates/events/eventEditor.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/templates/events/event_confirm_delete.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/templates/events/event_form.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/templates/events/login.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/static/images/Captura_de_pantalla_2016-11-11_a_las_9.10.47.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/static/images/Captura_de_pantalla_2016-11-11_a_las_9.10.47_5L9pSuy.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/static/images/Captura_de_pantalla_2016-11-11_a_las_9.10.47_MY6gfLT.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/static/images/Captura_de_pantalla_2016-11-11_a_las_9.10.47_O1LzGtF.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/static/images/Captura_de_pantalla_2016-11-11_a_las_9.10.47_atCoghQ.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/static/images/Captura_de_pantalla_2016-11-11_a_las_9.10.47_fcvbqA5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/static/images/Captura_de_pantalla_2016-11-11_a_las_9.10.47_jJkotOE.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/static/images/Captura_de_pantalla_2016-11-11_a_las_9.10.47_mIIktrU.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/static/images/Captura_de_pantalla_2016-11-11_a_las_9.10.47_mv3428j.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/static/images/Captura_de_pantalla_2016-11-11_a_las_9.10.47_t6c3gj8.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/static/images/Captura_de_pantalla_2016-11-12_a_las_16.43.50.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/static/images/Captura_de_pantalla_2016-11-12_a_las_16.43.50_DFLxRV2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/static/images/Captura_de_pantalla_2016-11-12_a_las_16.43.50_Kfynvva.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/static/images/Captura_de_pantalla_2016-11-12_a_las_16.43.50_L61sMHp.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/static/images/Captura_de_pantalla_2016-11-12_a_las_16.43.50_R66xQPb.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/static/images/Captura_de_pantalla_2016-11-12_a_las_16.43.50_bEZUV1r.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/static/images/Captura_de_pantalla_2016-11-12_a_las_16.43.50_bVlnVgk.png" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fuldacity/events/management/__init__.py" afterPath="$PROJECT_DIR$/fuldacity/authentication/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fuldacity/events/management/commands/__init__,py" afterPath="$PROJECT_DIR$/fuldacity/authentication/migrations/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fuldacity/static/images/no-img.png" afterPath="$PROJECT_DIR$/fuldacity/events/static/events/images/no-img.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fuldacity/events/static/events/js/app.module.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fuldacity/events/templates/events/register.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/authentication/admin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/authentication/apps.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/authentication/migrations/0001_initial.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/authentication/models.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/authentication/permissions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/authentication/serializers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/authentication/services/authentication.service.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/authentication/templates/register.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/authentication/tests.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/authentication/views.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fuldacity/events/migrations/0001_initial.py" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/fuldacity/authentication/__init__.py" afterPath="$PROJECT_DIR$/fuldacity/imageAspectRatio.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/fuldacity/authentication/migrations/__init__.py" afterPath="$PROJECT_DIR$/fuldacity/events/static/events/css/style.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/fuldacity/events/static/events/images/no-img.png" afterPath="$PROJECT_DIR$/fuldacity/events/static/events/img/no-img.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fuldacity/static/bower_components/angular/angular.min.js.gzip" afterPath="$PROJECT_DIR$/fuldacity/static/bower_components/angular/angular.min.js.gzip" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fuldacity/events/admin.py" afterPath="$PROJECT_DIR$/fuldacity/events/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fuldacity/events/forms.py" afterPath="$PROJECT_DIR$/fuldacity/events/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fuldacity/events/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/fuldacity/events/migrations/0001_initial.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fuldacity/events/models.py" afterPath="$PROJECT_DIR$/fuldacity/events/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fuldacity/bower.json" afterPath="$PROJECT_DIR$/fuldacity/bower.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fuldacity/events/templates/events/base.html" afterPath="$PROJECT_DIR$/fuldacity/events/templates/events/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fuldacity/events/templates/events/list.html" afterPath="$PROJECT_DIR$/fuldacity/events/templates/events/list.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fuldacity/events/urls.py" afterPath="$PROJECT_DIR$/fuldacity/events/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fuldacity/events/views.py" afterPath="$PROJECT_DIR$/fuldacity/events/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fuldacity/fuldacity/settings.py" afterPath="$PROJECT_DIR$/fuldacity/fuldacity/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fuldacity/fuldacity/urls.py" afterPath="$PROJECT_DIR$/fuldacity/fuldacity/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fuldacity/static/bower_components/angular/.bower.json" afterPath="$PROJECT_DIR$/fuldacity/static/bower_components/angular/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fuldacity/static/bower_components/angular/angular.js" afterPath="$PROJECT_DIR$/fuldacity/static/bower_components/angular/angular.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fuldacity/static/bower_components/angular/angular.min.js" afterPath="$PROJECT_DIR$/fuldacity/static/bower_components/angular/angular.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fuldacity/static/bower_components/angular/angular.min.js.map" afterPath="$PROJECT_DIR$/fuldacity/static/bower_components/angular/angular.min.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fuldacity/static/bower_components/angular/bower.json" afterPath="$PROJECT_DIR$/fuldacity/static/bower_components/angular/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fuldacity/static/bower_components/angular/package.json" afterPath="$PROJECT_DIR$/fuldacity/static/bower_components/angular/package.json" />
     </list>
     <ignored path="fuldacityProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -140,93 +52,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fuldacity/events/templates/events/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="91" selection-start-line="23" selection-start-column="91" selection-end-line="23" selection-end-column="91" />
+            <state relative-caret-position="156">
+              <caret line="248" column="34" selection-start-line="248" selection-start-column="34" selection-end-line="248" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/fuldacity/fuldacity/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1425">
-              <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fuldacity/authentication/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#48#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="authentication.service.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fuldacity/authentication/services/authentication.service.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="register.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fuldacity/authentication/templates/register.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bower.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fuldacity/bower.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".bowerrc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fuldacity/.bowerrc">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fuldacity/fuldacity/urls.py">
+      <file leaf-file-name="app.module.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fuldacity/events/static/events/js/app.module.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="41" selection-start-line="0" selection-start-column="41" selection-end-line="0" selection-end-column="41" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fuldacity/events/static/events/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="651">
+              <caret line="47" column="11" selection-start-line="47" selection-start-column="11" selection-end-line="47" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fuldacity/fuldacity/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="690">
+              <caret line="178" column="23" selection-start-line="178" selection-start-column="23" selection-end-line="178" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -235,8 +95,28 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fuldacity/events/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="75">
+              <caret line="9" column="67" selection-start-line="9" selection-start-column="67" selection-end-line="9" selection-end-column="67" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fuldacity/events/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fuldacity/events/templates/events/list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="31" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -247,10 +127,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
-        <option value="Python Script" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="Python Script" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -260,9 +140,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/fuldacity/events/templates/events/index..html" />
-        <option value="$PROJECT_DIR$/fuldacity/events/templates/events/index.html" />
-        <option value="$PROJECT_DIR$/fuldacity/events/management/commands/createsu.py" />
         <option value="$PROJECT_DIR$/fuldacity/events/management/__init__.py" />
         <option value="$PROJECT_DIR$/.ebextensions/02_python.config" />
         <option value="$PROJECT_DIR$/fuldacity/events/migrations/0001_initial.py" />
@@ -284,13 +161,11 @@
         <option value="$PROJECT_DIR$/fuldacity/events/templates/events/event-erstellen.html" />
         <option value="$PROJECT_DIR$/fuldacity/events/templates/events/component-select-picker.html" />
         <option value="$PROJECT_DIR$/fuldacity/events/fixtures/kategorie.json" />
-        <option value="$PROJECT_DIR$/fuldacity/events/urls.py" />
         <option value="$PROJECT_DIR$/fuldacity/events/templates/events/eventErstellen.html" />
         <option value="$PROJECT_DIR$/fuldacity/events/forms.py" />
         <option value="$PROJECT_DIR$/fuldacity/events/templates/events/erstellen.html" />
         <option value="$PROJECT_DIR$/fuldacity/fuldacity/custom_storages.py" />
         <option value="$PROJECT_DIR$/fuldacity/custom_storages.py" />
-        <option value="$PROJECT_DIR$/fuldacity/events/views.py" />
         <option value="$PROJECT_DIR$/fuldacity/events/static/events/css/design.css" />
         <option value="$PROJECT_DIR$/fuldacity/events/templates/events/portfolio-3.html" />
         <option value="$PROJECT_DIR$/fuldacity/events/templates/events/list.html" />
@@ -305,9 +180,17 @@
         <option value="$PROJECT_DIR$/.bowerrc" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/bower.json" />
+        <option value="$PROJECT_DIR$/fuldacity/events/templates/angular-material-basic-app/index.html" />
+        <option value="$PROJECT_DIR$/fuldacity/events/templates/angular-material-navbar/index.html" />
+        <option value="$PROJECT_DIR$/fuldacity/imageAspectRatio.py" />
+        <option value="$PROJECT_DIR$/fuldacity/angular-material-login-dialog/js/index.js" />
+        <option value="$PROJECT_DIR$/fuldacity/events/urls.py" />
+        <option value="$PROJECT_DIR$/fuldacity/events/views.py" />
         <option value="$PROJECT_DIR$/fuldacity/fuldacity/urls.py" />
-        <option value="$PROJECT_DIR$/fuldacity/events/templates/events/base.html" />
+        <option value="$PROJECT_DIR$/fuldacity/events/static/events/css/style.css" />
         <option value="$PROJECT_DIR$/fuldacity/fuldacity/settings.py" />
+        <option value="$PROJECT_DIR$/fuldacity/events/static/events/js/app.module.js" />
+        <option value="$PROJECT_DIR$/fuldacity/events/templates/events/base.html" />
       </list>
     </option>
   </component>
@@ -346,7 +229,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -400,13 +282,110 @@
               <option name="myItemId" value="bower_components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="angular" />
+              <option name="myItemId" value="fuldacityProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fuldacityProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fuldacity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="events" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fuldacityProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fuldacityProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fuldacity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="events" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="events" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fuldacityProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fuldacityProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fuldacity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="events" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="events" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fuldacityProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fuldacityProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fuldacity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="events" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="events" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -417,23 +396,23 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="FullScreen" value="true" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/fuldacity/static" />
       <recent name="$PROJECT_DIR$/fuldacity/events/templates/events" />
+      <recent name="$PROJECT_DIR$/fuldacity/events" />
+      <recent name="$PROJECT_DIR$/fuldacity/events/templates" />
+      <recent name="$PROJECT_DIR$/fuldacity/static" />
       <recent name="$PROJECT_DIR$/fuldacity/events/static/events/css" />
-      <recent name="$PROJECT_DIR$/fuldacity/events/static/events/js" />
-      <recent name="$PROJECT_DIR$/fuldacity/events/static/events/img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/fuldacity" />
+      <recent name="$PROJECT_DIR$/fuldacity/events/templates" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/fuldacity/events" />
       <recent name="$PROJECT_DIR$/fuldacity/static/events/images" />
-      <recent name="$PROJECT_DIR$/fuldacity/static/events" />
     </key>
   </component>
   <component name="RunManager">
@@ -666,7 +645,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -685,6 +664,26 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24236111" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.config" />
@@ -712,68 +711,112 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/fuldacity/events/templates/events/process-steps.html" />
-    <entry file="file://$PROJECT_DIR$/fuldacity/events/templates/events/detail.html" />
-    <entry file="file://$PROJECT_DIR$/fuldacity/events/static/events/css/bs-select.css" />
-    <entry file="file://$PROJECT_DIR$/fuldacity/events/static/events/js/bs-select.js" />
-    <entry file="file://$PROJECT_DIR$/fuldacity/events/templates/events/component-select-picker.html" />
-    <entry file="file://$PROJECT_DIR$/fuldacity/events/static/events/css/datepicker.css" />
-    <entry file="file://$PROJECT_DIR$/fuldacity/events/static/events/css/daterangepicker.css" />
-    <entry file="file://$PROJECT_DIR$/fuldacity/events/static/events/js/moment.js" />
-    <entry file="file://$PROJECT_DIR$/fuldacity/events/static/events/js/datepicker.js" />
-    <entry file="file://$PROJECT_DIR$/fuldacity/events/static/events/js/daterangepicker.js" />
-    <entry file="file://$PROJECT_DIR$/fuldacity/events/templates/events/component-datepicker.html" />
-    <entry file="file://$PROJECT_DIR$/fuldacity/events/static/events/css/bs-filestyle.css" />
-    <entry file="file://$PROJECT_DIR$/fuldacity/events/static/events/js/bs-filestyle.js" />
-    <entry file="file://$PROJECT_DIR$/fuldacity/events/templates/events/component-uploads.html" />
-    <entry file="file://$PROJECT_DIR$/fuldacity/events/templates/events/component-select-box.html" />
-    <entry file="file://$PROJECT_DIR$/fuldacity/events/static/events/js/select-boxes.js" />
-    <entry file="file://$PROJECT_DIR$/fuldacity/events/fixtures/kategorie.json">
+    <entry file="file://$PROJECT_DIR$/fuldacity/authentication/admin.py" />
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/management/commands/createsu.py" />
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        <state relative-caret-position="60">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fuldacity/events/static/events/css/select-boxes.css" />
-    <entry file="file://$PROJECT_DIR$/fuldacity/events/forms.py">
+    <entry file="file://$PROJECT_DIR$/fuldacity/authentication/tests.py" />
+    <entry file="file://$PROJECT_DIR$/fuldacity/authentication/permissions.py" />
+    <entry file="file://$PROJECT_DIR$/fuldacity/authentication/views.py" />
+    <entry file="file://$PROJECT_DIR$/fuldacity/authentication/services/authentication.service.js" />
+    <entry file="file://$PROJECT_DIR$/fuldacity/authentication/templates/register.html" />
+    <entry file="file://$PROJECT_DIR$/fuldacity/bower.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fuldacity/static/images/events/name.jpg" />
-    <entry file="file://$PROJECT_DIR$/fuldacity/static/images/events/16.jpg" />
-    <entry file="file://$PROJECT_DIR$/fuldacity/custom_storages.py">
+    <entry file="file://$PROJECT_DIR$/fuldacity/.bowerrc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+        <state relative-caret-position="15">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fuldacity/events/static/events/css/design.css" />
-    <entry file="file://$PROJECT_DIR$/fuldacity/events/static/events/css/style.css" />
-    <entry file="file://$PROJECT_DIR$/fuldacity/events/templates/events/erstellen.html" />
-    <entry file="file://$PROJECT_DIR$/fuldacity/events/templates/events/eventEditor.html" />
-    <entry file="file://$PROJECT_DIR$/fuldacity/events/templates/events/portfolio-3.html" />
-    <entry file="file://$PROJECT_DIR$/fuldacity/static/css/bootstrap.css" />
-    <entry file="file://$PROJECT_DIR$/fuldacity/static/css/bootstrap.css.map" />
-    <entry file="file://$PROJECT_DIR$/fuldacity/static/js/npm.js" />
-    <entry file="file://$PROJECT_DIR$/fuldacity/events/static/events/css/bootstrap.min.css">
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/templates/angular-material-basic-app/js/index.js" />
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/templates/angular-material-basic-app/css/style.css" />
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/templates/angular-material-basic-app/index.html" />
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/templates/angular-material-navbar/index.jade" />
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/templates/angular-material-navbar/stylus/style.stylus" />
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/templates/angular-material-navbar/js/index.js" />
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/templates/angular-material-navbar/css/style.css" />
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/templates/angular-material-navbar/index.html" />
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/templates/angular-material-design-starter-app/index.html" />
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fuldacity/imageAspectRatio.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fuldacity/static/bower_components/angular-material/angular-material.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fuldacity/authentication/models.py" />
+    <entry file="file://$PROJECT_DIR$/fuldacity/authentication/serializers.py" />
+    <entry file="file://$PROJECT_DIR$/fuldacity/angular-django-registration-auth-master/app/views/login.html" />
+    <entry file="file://$PROJECT_DIR$/fuldacity/angular-material-login-dialog/js/index.js" />
+    <entry file="file://$PROJECT_DIR$/fuldacity/angular-material-login-dialog/css/style.css" />
+    <entry file="file://$PROJECT_DIR$/fuldacity/angular-material-login-dialog/index.html" />
+    <entry file="file://$PROJECT_DIR$/fuldacity/angular-django-registration-auth-master/app/views/authrequired.html" />
+    <entry file="file://$PROJECT_DIR$/fuldacity/angular-django-registration-auth-master/app/views/main.html" />
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/scripts/app.js" />
+    <entry file="file://$PROJECT_DIR$/fuldacity/angular-django-registration-auth-master/app/scripts/app.js" />
+    <entry file="file://$PROJECT_DIR$/fuldacity/angular-django-registration-auth-master/app/scripts/controllers/restricted.js" />
+    <entry file="file://$PROJECT_DIR$/fuldacity/angular-django-registration-auth-master/test/runner.html" />
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/templates/events/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fuldacity/angular-django-registration-auth-master/app/scripts/controllers/register.js" />
+    <entry file="file://$PROJECT_DIR$/fuldacity/fuldacity/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="51" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fuldacity/angular-django-registration-auth-master/app/scripts/services/validate.js" />
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="9" column="67" selection-start-line="9" selection-start-column="67" selection-end-line="9" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/fuldacity/events/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="49" column="116" selection-start-line="49" selection-start-column="116" selection-end-line="49" selection-end-column="116" />
-          <folding>
-            <element signature="e#0#38#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="180">
+          <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -785,152 +828,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fuldacity/authentication/admin.py">
+    <entry file="file://$PROJECT_DIR$/fuldacity/angular-django-registration-auth-master/app/views/register.html" />
+    <entry file="file://$PROJECT_DIR$/fuldacity/angular-django-registration-auth-master/app/scripts/controllers/authrequired.js" />
+    <entry file="file://$PROJECT_DIR$/fuldacity/angular-django-registration-auth-master/app/index.html" />
+    <entry file="file://$PROJECT_DIR$/fuldacity/angular-django-registration-auth-master/app/scripts/controllers/login.js" />
+    <entry file="file://$PROJECT_DIR$/fuldacity/angular-django-registration-auth-master/app/scripts/services/djangoAuth.js" />
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/static/events/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fuldacity/events/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fuldacity/events/management/commands/createsu.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="8" column="88" selection-start-line="8" selection-start-column="88" selection-end-line="8" selection-end-column="88" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fuldacity/events/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#32#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fuldacity/authentication/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="54" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fuldacity/authentication/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fuldacity/authentication/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#56#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fuldacity/authentication/permissions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fuldacity/authentication/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fuldacity/authentication/services/authentication.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fuldacity/authentication/templates/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fuldacity/.bowerrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fuldacity/bower.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fuldacity/events/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fuldacity/fuldacity/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="41" selection-start-line="0" selection-start-column="41" selection-end-line="0" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fuldacity/events/templates/events/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="91" selection-start-line="23" selection-start-column="91" selection-end-line="23" selection-end-column="91" />
+        <state relative-caret-position="651">
+          <caret line="47" column="11" selection-start-line="47" selection-start-column="11" selection-end-line="47" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fuldacity/fuldacity/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1425">
-          <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+        <state relative-caret-position="690">
+          <caret line="178" column="23" selection-start-line="178" selection-start-column="23" selection-end-line="178" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/static/events/js/app.module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fuldacity/events/templates/events/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="248" column="34" selection-start-line="248" selection-start-column="34" selection-end-line="248" selection-end-column="34" />
           <folding />
         </state>
       </provider>
