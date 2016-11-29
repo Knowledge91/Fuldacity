@@ -1,6 +1,10 @@
 angular.module('toolbar').
-    controller('toolbarController', ['$mdSidenav', '$mdMedia', '$scope',  function($mdSidenav, $mdMedia, $scope) {
+    controller('toolbarController', ['$mdSidenav', '$mdMedia', '$scope', '$mdDialog', '$mdToast', '$resource', function($mdSidenav, $mdMedia, $scope, $mdDialog, $mdToast, $resource) {
         self = this;
+        this.$mdMedia = $mdMedia;
+        this.$mdDialog = $mdDialog;
+        this.$mdToast = $mdToast;
+        this.$scope = $scope;
         this.toggleSidenav = function () {
             return $mdSidenav('left').toggle();
         };
@@ -12,7 +16,7 @@ angular.module('toolbar').
         };
 
            this.status = '';
-            this.customFullscreen = $mdMedia('xs') || $mdMedia('sm');
+            this.customFullscreen = this.$mdMedia('xs') || this.$mdMedia('sm');
 
          this.showDialog = function (event) {
                     var _this = this;
