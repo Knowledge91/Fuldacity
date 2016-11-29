@@ -1,0 +1,1 @@
+angular.module('eventList', ['ngMaterial', 'ngMessages', 'ngResource']);
