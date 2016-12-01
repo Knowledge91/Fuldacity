@@ -2,7 +2,7 @@
 
 
 <!DOCTYPE html>
-<html dir="ltr" lang="en-US">
+<html dir="ltr" ng-app="StarterApp" lang="en-US">
 	<head>
       	<link rel="stylesheet" href="{% static 'bower_components/angular-material/angular-material.min.css' %}">
 		<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
@@ -23,14 +23,20 @@
         <script src="{% static 'events/js/app.module.js' %}"></script>
         <script src="{% static 'events/js/app.config.js' %}"></script>
 
+        <script src="{% static 'events/js/core/core.module.js' %}"></script>
+        <script src="{% static 'events/js/core/rest-auth/rest-auth.module.js' %}"></script>
+        <script src="{% static 'events/js/core/rest-auth/rest-auth.service.js' %}"></script>
+        <script src="{% static 'events/js/core/authentication/authentication.module.js' %}"></script>
+        <script src="{% static 'events/js/core/dialog/dialog.module.js' %}"></script>
+        <script src="{% static 'events/js/core/dialog/dialog.service.js' %}"></script>
+
         <script src="{% static 'events/js/toolbar/toolbar.module.js' %}"></script>
         <script src="{% static 'events/js/toolbar/toolbar.controller.js' %}"></script>
 
         <script src="{% static 'events/js/event-list/event-list.module.js' %}"></script>
         <script src="{% static 'events/js/event-list/event-list.component.js' %}"></script>
 	</head>
-
-<body ng-app="StarterApp" ng-cloak >
+<body ng-cloak >
     <div layout="column"  layout-fill="layout-fill" ng-cloak>
         <md-toolbar ng-controller="toolbarController as toolbarCtrl">
             <div class="md-toolbar-tools" layout layout-align="space-between center">
@@ -40,14 +46,15 @@
                     </md-button>
                     <h3>Fuldacity</h3>
                     <md-button>Events</md-button>
-                    <md-button>Locations</md-button>
+                    <md-button ng-click="toolbarCtrl.showStatus()">Locations</md-button>
                 </div>
 
 
                 <input flex="40" ng-change="toolbarCtrl.validateSearch()" ng-focus="toolbarCtrl.focusSearch()" ng-blur="toolbarCtrl.defocusSearch()" ng-class="searchClass" class="searchbar" ng-model="search" placeholder="Such Veranstaltungen, Locations & mehr...">
 
                 <div>
-                    <md-button ng-click="toolbarCtrl.showDialog($event)">Login</md-button>
+                    <md-button ng-hide="restAuth.authenticated" ng-click="toolbarCtrl.showLogin()">Login</md-button>
+                    <md-button ng-show="restAuth.authenticated" ng-click="toolbarCtrl.logout()">Logout</md-button>
                 </div>
             </div>
         </md-toolbar>
@@ -82,45 +89,11 @@
 
     <div ng-view ></div>
 
+
                       </main>
 
     </div>
 
-
-        <script type="text/ng-template" id="login-dialog.template.html">
-            <md-dialog id="login-dialog" aria-label="Login">
-                <form name="loginForm" ng-submit="dialog.login()">
-                    <md-toolbar>
-                        <div class="md-toolbar-tools">
-                            <h2>Login</h2>
-                            <span flex></span>
-                            <md-button class="md-icon-button" ng-click="dialog.close()">
-                                X<!--<md-icon md-svg-src="img/icons/ic_close_24px.svg" aria-label="Close dialog"></md-icon>-->
-                            </md-button>
-                        </div>
-                    </md-toolbar>
-
-                    <md-dialog-content>
-                        <div class="md-dialog-content">
-                            <md-input-container class="md-block">
-                                <label>Username</label>
-                                <input name="username" ng-model="dialog.username" md-autofocus required />
-                            </md-input-container>
-                            <md-input-container class="md-block">
-                                <label>Password</label>
-                                <input type="password" name="password" ng-model="dialog.password" required />
-                            </md-input-container>
-                        </div>
-                    </md-dialog-content>
-
-                    <md-dialog-actions layout="row">
-                        <a href="" class="md-primary">Passwort vergessen?</a>
-                        <span flex></span>
-                        <md-button type="submit" ng-disabled="loginForm.$invalid" class="md-raised md-primary">Login</md-button>
-                    </md-dialog-actions>
-                </form>
-            </md-dialog>
-        </script>
 
 
 

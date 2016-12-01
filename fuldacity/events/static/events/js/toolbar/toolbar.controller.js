@@ -1,28 +1,40 @@
 angular.module('toolbar').
-    controller('toolbarController', ['$mdSidenav', '$mdMedia', '$scope', '$mdDialog', '$mdToast', '$resource', function($mdSidenav, $mdMedia, $scope, $mdDialog, $mdToast, $resource) {
-        self = this;
-        this.$mdMedia = $mdMedia;
-        this.$mdDialog = $mdDialog;
-        this.$mdToast = $mdToast;
-        this.$scope = $scope;
-        this.toggleSidenav = function () {
-            return $mdSidenav('left').toggle();
-        };
-        this.focusSearch = function () {
-            $scope.searchClass = "focus";
-        };
-        this.defocusSearch = function () {
-            $scope.searchClass = "lol";
-        };
+    controller('toolbarController', ['$mdSidenav', '$mdMedia', '$scope', '$mdDialog', '$mdToast', '$resource', 'restAuth',
+        function($mdSidenav, $mdMedia, $scope, $mdDialog, $mdToast, $resource, restAuth) {
+            $scope.restAuth = restAuth;
+            this.logout = restAuth.logout;
+            this.showStatus = function() {
+                console.log($scope.restAuth.authenticated);
+                console.log(restAuth.authenticated);
+            }
 
-           this.status = '';
+
+            self = this;
+            this.$mdMedia = $mdMedia;
+            this.$mdDialog = $mdDialog;
+            this.$mdToast = $mdToast;
+            this.$scope = $scope;
+            this.toggleSidenav = function () {
+                return $mdSidenav('left').toggle();
+            };
+            this.focusSearch = function () {
+                $scope.searchClass = "focus";
+            };
+            this.defocusSearch = function () {
+                $scope.searchClass = "lol";
+            };
+
+
+
+            this.status = '';
             this.customFullscreen = this.$mdMedia('xs') || this.$mdMedia('sm');
 
-         this.showDialog = function (event) {
-                    var _this = this;
-                    var useFullScreen = (this.$mdMedia('sm') || this.$mdMedia('xs')) && this.customFullscreen;
-                    this.$mdDialog.show({
-                        controller: function LoginDialogController($mdDialog, $resource) {
+            this.showLogin = function (event) {
+                var _this = this;
+                var useFullScreen = (this.$mdMedia('sm') || this.$mdMedia('xs')) && this.customFullscreen;
+                this.$mdDialog.show({
+                    controller: ['$scope', '$mdDialog', '$resource',
+                        function LoginDialogController($scope, $mdDialog, $resource) {
                             this.$mdDialog = $mdDialog;
                             this.$resource = $resource;
                             this.hide = function () {
@@ -32,31 +44,27 @@ angular.module('toolbar').
                                 this.$mdDialog.cancel();
                             };
                             this.login = function () {
-                                var Todo = this.$resource('/rest-auth/login/');
-
-                                //create a todo
-                                var todo1 = new Todo();
-                                todo1.username = 'test';
-                                todo1.password = 'test1234';
-                                todo1.$save();
-
+                                restAuth.login(this.username, this.password);
                                 this.$mdDialog.hide({username: this.username, password: this.password});
                             };
-                        },
-                        controllerAs: 'dialog',
-                        templateUrl: 'login-dialog.template.html',
-                        parent: angular.element(document.body),
-                        targetEvent: event,
-                        clickOutsideToClose: true,
-                        fullscreen: useFullScreen
-                    }).then(function (credentials) { return _this.showToast("Thanks for logging in, " + credentials.username + "."); }, function () { return _this.showToast('You canceled the login.'); });
-                    this.$scope.$watch(function () { return _this.$mdMedia('xs') || _this.$mdMedia('sm'); }, function (wantsFullScreen) { return _this.customFullscreen = wantsFullScreen === true; });
-                };
+                        }
+                    ],
+                    controllerAs: 'dialog',
+                    templateUrl: '/static/events/js/core/authentication/login-dialog.template.html',
+                    parent: angular.element(document.body),
+                    targetEvent: event,
+                    clickOutsideToClose: true,
+                    fullscreen: useFullScreen
+                }).then(function (credentials) { return _this.showToast("Thanks for logging in, " + credentials.username + "."); }, function () { return _this.showToast('You canceled the login.'); });
+                this.$scope.$watch(function () { return _this.$mdMedia('xs') || _this.$mdMedia('sm'); }, function (wantsFullScreen) { return _this.customFullscreen = wantsFullScreen === true; });
+            };
 
-                this.showToast = function (content) {
-                    this.$mdToast.show(this.$mdToast.simple()
-                        .content(content)
-                        .position('top right')
-                        .hideDelay(3000));
-                };
-    }]);
+            this.showToast = function (content) {
+                this.$mdToast.show(this.$mdToast.simple()
+                    .content(content)
+                    .position('top right')
+                    .hideDelay(3000));
+            };
+        }
+    ]
+);
