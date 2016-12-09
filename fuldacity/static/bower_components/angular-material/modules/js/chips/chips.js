@@ -2,7 +2,7 @@
  * Angular Material Design
  * https://github.com/angular/material
  * @license MIT
- * v1.1.1
+ * v1.1.1-master-491d139
  */
 (function( window, angular, undefined ){
 "use strict";
@@ -20,7 +20,7 @@ angular.module('material.components.chips', [
 ]);
 
 
-MdChipCtrl.$inject = ["$scope", "$element", "$mdConstant", "$timeout", "$mdUtil"];angular
+MdChipCtrl['$inject'] = ["$scope", "$element", "$mdConstant", "$timeout", "$mdUtil"];angular
   .module('material.components.chips')
   .controller('MdChipCtrl', MdChipCtrl);
 
@@ -214,7 +214,7 @@ MdChipCtrl.prototype.chipMouseDown = function() {
 };
 
 
-MdChip.$inject = ["$mdTheming", "$mdUtil"];angular
+MdChip['$inject'] = ["$mdTheming", "$mdUtil"];angular
     .module('material.components.chips')
     .directive('mdChip', MdChip);
 
@@ -284,7 +284,7 @@ function MdChip($mdTheming, $mdUtil) {
 }
 
 
-MdChipRemove.$inject = ["$timeout"];angular
+MdChipRemove['$inject'] = ["$timeout"];angular
     .module('material.components.chips')
     .directive('mdChipRemove', MdChipRemove);
 
@@ -344,7 +344,7 @@ function MdChipRemove ($timeout) {
 }
 
 
-MdChipTransclude.$inject = ["$compile"];angular
+MdChipTransclude['$inject'] = ["$compile"];angular
     .module('material.components.chips')
     .directive('mdChipTransclude', MdChipTransclude);
 
@@ -371,7 +371,7 @@ function MdChipTransclude ($compile) {
 }
 
 
-MdChipsCtrl.$inject = ["$scope", "$attrs", "$mdConstant", "$log", "$element", "$timeout", "$mdUtil"];angular
+MdChipsCtrl['$inject'] = ["$scope", "$attrs", "$mdConstant", "$log", "$element", "$timeout", "$mdUtil"];angular
     .module('material.components.chips')
     .controller('MdChipsCtrl', MdChipsCtrl);
 
@@ -401,6 +401,9 @@ function MdChipsCtrl ($scope, $attrs, $mdConstant, $log, $element, $timeout, $md
 
   /** @type {angular.$scope} */
   this.parent = $scope.$parent;
+
+  /** @type {$mdUtil} */
+  this.$mdUtil = $mdUtil;
 
   /** @type {$log} */
   this.$log = $log;
@@ -566,7 +569,7 @@ MdChipsCtrl.prototype.updateChipContents = function(chipIndex, chipContents){
  * @return {boolean}
  */
 MdChipsCtrl.prototype.isEditingChip = function() {
-  return !!this.$element[0].getElementsByClassName('_md-chip-editing').length;
+  return !!this.$element[0].querySelector('._md-chip-editing');
 };
 
 
@@ -588,7 +591,7 @@ MdChipsCtrl.prototype.isRemovable = function() {
 MdChipsCtrl.prototype.chipKeydown = function (event) {
   if (this.getChipBuffer()) return;
   if (this.isEditingChip()) return;
-  
+
   switch (event.keyCode) {
     case this.$mdConstant.KEY_CODE.BACKSPACE:
     case this.$mdConstant.KEY_CODE.DELETE:
@@ -753,12 +756,15 @@ MdChipsCtrl.prototype.useOnSelectExpression = function() {
  * model of an {@code md-autocomplete}, or, through some magic, the model
  * bound to any inpput or text area element found within a
  * {@code md-input-container} element.
- * @return {Object|string}
+ * @return {string}
  */
 MdChipsCtrl.prototype.getChipBuffer = function() {
-  return !this.userInputElement ? this.chipBuffer :
-      this.userInputNgModelCtrl ? this.userInputNgModelCtrl.$viewValue :
-          this.userInputElement[0].value;
+  var chipBuffer =  !this.userInputElement ? this.chipBuffer :
+                     this.userInputNgModelCtrl ? this.userInputNgModelCtrl.$viewValue :
+                     this.userInputElement[0].value;
+
+  // Ensure that the chip buffer is always a string. For example, the input element buffer might be falsy.
+  return angular.isString(chipBuffer) ? chipBuffer : '';
 };
 
 /**
@@ -901,20 +907,8 @@ MdChipsCtrl.prototype.onInputFocus = function () {
 MdChipsCtrl.prototype.onInputBlur = function () {
   this.inputHasFocus = false;
 
-  var chipBuffer = this.getChipBuffer().trim();
-
-  // Update the custom chip validators.
-  this.validateModel();
-
-  var isModelValid = this.ngModelCtrl.$valid;
-
-  if (this.userInputNgModelCtrl) {
-    isModelValid &= this.userInputNgModelCtrl.$valid;
-  }
-
-  // Only append the chip and reset the chip buffer if the chips and input ngModel is valid.
-  if (this.addOnBlur && chipBuffer && isModelValid) {
-    this.appendChip(chipBuffer);
+  if (this.shouldAddOnBlur()) {
+    this.appendChip(this.getChipBuffer().trim());
     this.resetChipBuffer();
   }
 };
@@ -969,12 +963,32 @@ MdChipsCtrl.prototype.configureAutocomplete = function(ctrl) {
   }
 };
 
+/**
+ * Whether the current chip buffer should be added on input blur or not.
+ * @returns {boolean}
+ */
+MdChipsCtrl.prototype.shouldAddOnBlur = function() {
+
+  // Update the custom ngModel validators from the chips component.
+  this.validateModel();
+
+  var chipBuffer = this.getChipBuffer().trim();
+  var isModelValid = this.ngModelCtrl.$valid;
+  var isAutocompleteShowing = this.autocompleteCtrl && !this.autocompleteCtrl.hidden;
+
+  if (this.userInputNgModelCtrl) {
+    isModelValid = isModelValid && this.userInputNgModelCtrl.$valid;
+  }
+
+  return this.addOnBlur && !this.requireMatch && chipBuffer && isModelValid && !isAutocompleteShowing;
+};
+
 MdChipsCtrl.prototype.hasFocus = function () {
   return this.inputHasFocus || this.selectedChip >= 0;
 };
 
   
-  MdChips.$inject = ["$mdTheming", "$mdUtil", "$compile", "$log", "$timeout", "$$mdSvgRegistry"];angular
+  MdChips['$inject'] = ["$mdTheming", "$mdUtil", "$compile", "$log", "$timeout", "$$mdSvgRegistry"];angular
       .module('material.components.chips')
       .directive('mdChips', MdChips);
 
@@ -1413,7 +1427,7 @@ MdContactChipsCtrl.prototype.filterSelectedContacts = function(contact) {
 };
 
 
-MdContactChips.$inject = ["$mdTheming", "$mdUtil"];angular
+MdContactChips['$inject'] = ["$mdTheming", "$mdUtil"];angular
   .module('material.components.chips')
   .directive('mdContactChips', MdContactChips);
 
@@ -1444,6 +1458,8 @@ MdContactChips.$inject = ["$mdTheming", "$mdUtil"];angular
  *    contact's email address.
  * @param {string} md-contact-image The field name of the contact object representing the
  *    contact's image.
+ * @param {number=} md-min-length Specifies the minimum length of text before autocomplete will
+ *    make suggestions
  *
  *
  * @param {expression=} filter-selected Whether to filter selected contacts from the list of
@@ -1478,6 +1494,7 @@ var MD_CONTACT_CHIPS_TEMPLATE = '\
               md-items="item in $mdContactChipsCtrl.queryContact($mdContactChipsCtrl.searchText)"\
               md-item-text="$mdContactChipsCtrl.itemName(item)"\
               md-no-cache="true"\
+              md-min-length="$mdContactChipsCtrl.minLength"\
               md-autoselect\
               placeholder="{{$mdContactChipsCtrl.contacts.length == 0 ?\
                   $mdContactChipsCtrl.placeholder : $mdContactChipsCtrl.secondaryPlaceholder}}">\
@@ -1533,6 +1550,7 @@ function MdContactChips($mdTheming, $mdUtil) {
       contactEmail: '@mdContactEmail',
       contacts: '=ngModel',
       requireMatch: '=?mdRequireMatch',
+      minLength: '=?mdMinLength',
       highlightFlags: '@?mdHighlightFlags'
     }
   };

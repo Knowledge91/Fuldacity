@@ -32,7 +32,7 @@
 
                 <md-input-container>
                     <label>Datum</label>
-                    <md-datepicker name="datum" ng-model="$ctrl.datum" required></md-datepicker>
+                    <md-datepicker  ng-model="$ctrl.datum" ></md-datepicker>
                     <div ng-messages="forms.form.datum.$error">
                         <div ng-message="required">
                             Geben Sie eine Datum ein.
@@ -67,7 +67,6 @@
                         Wählen Sie eine Adresse aus der vorgeschlagenenen Liste via Klick aus.
                     </div>
                 </div>
-                <ng-map></ng-map>
             </md-input-container>
 
             <md-input-container class="md-block">

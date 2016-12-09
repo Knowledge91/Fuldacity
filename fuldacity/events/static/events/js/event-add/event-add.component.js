@@ -10,9 +10,6 @@ angular.module('eventAdd').
                 vm.types = "['address']";
                 NgMap.getMap().then(function(map) {
                     vm.map = map;
-                    console.log(map.getCenter());
-                    console.log('markers', map.markers);
-                    console.log('shapes', map.shapes);
                 });
 
                 $scope.$watch('forms.form', function(form) {
@@ -31,7 +28,7 @@ angular.module('eventAdd').
                             }
 
                         };
-                        form.address.$error.validationError = true;
+                        // form.address.$error.validationError = true;
                     }
                 });
 
