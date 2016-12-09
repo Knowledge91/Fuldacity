@@ -8,13 +8,8 @@ class Kategorie(models.Model):
     name = models.CharField(max_length=200)
 
 class Event(models.Model):
-    name = models.CharField(max_length=200, default="Neues Event")
-    beschreibung = models.TextField(default='Keine Beschreibung vorhanden.')
-    kategorie = models.ForeignKey(Kategorie, on_delete=models.CASCADE, default=1)
-    bild = models.ImageField(upload_to='images/events/', default='images/no-img.png')
-    pub_date = models.DateTimeField(default=datetime.datetime.now)
-    beginn = models.DateTimeField(default=datetime.datetime.now)
-    ende = models.DateTimeField(default=datetime.datetime.now)
+    titel = models.CharField(max_length=100, default="Neues Event")
+    datum = models.DateTimeField(default=datetime.datetime.now())
 
     def __str__(self):
         return self.name

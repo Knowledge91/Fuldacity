@@ -1,0 +1,130 @@
+<style>
+    .cropArea {
+      background: #E4E4E4;
+      overflow: hidden;
+      height:250px;
+    }
+  </style>
+<md-subheader class="md-primary">Pflichtfelder:</md-subheader>
+<div layout layout-align="space-around start">
+    <div flex="60">
+        <form name="forms.form" >
+            <div layout-gt-xs="row">
+                <md-input-container class="md-block" flex-gt-xs>
+                    <label>Titel</label>
+                    <input required name="titel" ng-model="$ctrl.titel">
+                    <div ng-messages="forms.form.titel.$error">
+                        <div ng-message="required">
+                            Geben Sie einen Eventtitel ein.
+                        </div>
+                    </div>
+                </md-input-container>
+
+                <md-input-container class="md-block" flex-gt-xs>
+                    <label>Location: </label>
+                    <input required name="location" ng-model="$ctrl.location">
+                    <div ng-messages="forms.form.location.$error">
+                        <div ng-message="required">
+                            Geben Sie eine Locationnamen ein.
+                        </div>
+                    </div>
+                </md-input-container>
+
+                <md-input-container>
+                    <label>Datum</label>
+                    <md-datepicker name="datum" ng-model="$ctrl.datum" required></md-datepicker>
+                    <div ng-messages="forms.form.datum.$error">
+                        <div ng-message="required">
+                            Geben Sie eine Datum ein.
+                        </div>
+                    </div>
+                </md-input-container>
+            </div>
+
+            <div layout="column" layout-align="center center" class="cropArea">
+                <ui-cropper image="myImage" area-type="rectangle" aspect-ratio="2" result-image="myCroppedImage" result-image-size='{w: 400,h: 200}' init-max-area="true"></ui-cropper>
+            </div>
+            <div>
+                <input class="ng-hide" id="fileInput" multiple type="file" />
+                <label for="fileInput" class="md-button md-raised md-primary">Browse</label> Bild hinzufügen
+            </div>
+
+
+
+            <md-input-container class="md-block">
+                <label>Address</label>
+                <input places-auto-complete size=80
+                       required
+                       name="address"
+                       ng-model="$ctrl.address"
+                       component-restrictions="{country:'de'}"
+                       types="{{types}}"
+                       on-place-changed="$ctrl.placeChanged()"
+                       placeholder="Marienplatz 7, Fulda, Germany"
+                        />
+                <div ng-messages="forms.form.address.$error" role="alert">
+                    <div ng-message="validationError" class="my-message">
+                        Wählen Sie eine Adresse aus der vorgeschlagenenen Liste via Klick aus.
+                    </div>
+                </div>
+                <ng-map></ng-map>
+            </md-input-container>
+
+            <md-input-container class="md-block">
+                <label>Beschreibung</label>
+                <textarea name="beschreibung" ng-model="$ctrl.beschreibung" md-maxlength="150" rows="5" md-select-on-focus required></textarea>
+                <div ng-messages="forms.form.beschreibung.$error" role="alert">
+                    <div ng-message="required" class="my-message">
+                        Beschreiben Sie Ihr Event.
+                    </div>
+                </div>
+            </md-input-container>
+
+            <div layout-gt-xs="row">
+                <md-input-container class="md-block">
+                    <label>Mindestalter: </label>
+                    <input ng-model="$ctrl.mindestalter">
+                </md-input-container>
+            </div>
+
+            <md-input-container class="md-block">
+                <label>Musikgenre:</label>
+                <md-chips
+                    ng-model="$ctrl.kategories"
+                    placeholder="Musikgenre hinzufügen"
+                    secondary-placeholder="+Rock"
+                    md-enable-chip-edit="true">
+                </md-chips>
+            </md-input-container>
+      </form>
+    </div>
+
+    <div layout="column" layout-align="center center" flex="30">
+        <md-card>
+            <img ng-src="{{myCroppedImage}}" class="md-card-image" alt="Washed Out">
+            <md-card-content>
+                <div layout layout-align="space-around center">
+                    <h2 class="md-title">{{ $ctrl.titel }}</h2>
+                    <h3 class="md-subhead">{{ $ctrl.datum | date : 'EEEE, d. LLLL'}}</h3>
+                </div>
+                <md-divider></md-divider>
+                <div layout layout-align="space-between end">
+                    <p class="md-body-2" layout-align="center center">
+                        <i class="material-icons">room</i>{{ $ctrl.location }} <br />
+                        <i class="material-icons">audiotrack</i> <span ng-repeat="kategorie in $ctrl.kategories"> {{ kategorie }} <span ng-if="!$last"> | </span> </span><br />
+                        <i class="material-icons">child_care</i> Mindestalter: {{$ctrl.mindestalter}} Jahre
+                    </p>
+                    <div class="price" md-colors="{background:'accent'}" md-whiteframe="1">13.00 €</div>
+                </div>
+            </md-card-content>
+        </md-card>
+
+        <div>
+            <md-button type="submit" class="md-raised md-primary" ng-click="$ctrl.erstellen()">Erstellen</md-button>
+        </div>
+    </div>
+
+
+</div>
+
+

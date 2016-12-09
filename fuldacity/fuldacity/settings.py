@@ -153,6 +153,8 @@ USE_TZ = True
 # django-rest-auth
 SITE_ID = 1
 ACCOUNT_LOGOUT_ON_GET = True
+# not using emails now
+EMAIL_BACKEND = 'django.core.mail.backends.dummy.EmailBackend'
 
 
 # add global static folder

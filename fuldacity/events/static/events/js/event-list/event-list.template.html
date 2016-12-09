@@ -1,182 +1,62 @@
-
-                <md-subheader class="md-primary">Heute</md-subheader>
+<div ng-repeat="(date, events) in eventList">
+    <md-subheader class="md-primary">{{date | date: 'fullDate'}}</md-subheader>
+    <div layout layout-align="space-around center" ng-repeat="event in events" ng-if="$index % 3 == 0">
+        <md-card flex="30">
+            <img ng-src="https://material.angularjs.org/latest/img/washedout.png" class="md-card-image" alt="Washed Out">
+            <md-card-content>
                 <div layout layout-align="space-around center">
-                    <md-card flex="30">
-                        <img ng-src="https://material.angularjs.org/latest/img/washedout.png" class="md-card-image" alt="Washed Out">
-                        <md-card-content>
-                            <div layout layout-align="space-around center">
-                                <h2 class="md-title">White Night</h2>
-                                <h3 class="md-subhead">23. November</h3>
-                            </div>
-                            <md-divider></md-divider>
-                            <div layout layout-align="space-between end">
-                                <p class="md-body-2" layout-align="center center">
-                                    <i class="material-icons">room</i> Sclub <br />
-                                    <i class="material-icons">audiotrack</i> Hip Hop | Trap | R&B <br />
-                                    <i class="material-icons">child_care</i> Mindestalter: 16 Jahre
-                                </p>
-                                <div class="price" md-colors="{background:'accent'}" md-whiteframe="1">13.00 €</div>
-                            </div>
-                        </md-card-content>
-                    </md-card>
-
-                    <md-card flex="30">
-                        <img ng-src="https://material.angularjs.org/latest/img/washedout.png" class="md-card-image" alt="Washed Out">
-                        <md-card-content>
-                            <div layout layout-align="space-around center">
-                                <h2 class="md-title">White Night</h2>
-                                <h3 class="md-subhead">23. November</h3>
-                            </div>
-                            <md-divider></md-divider>
-                            <div layout layout-align="space-between end">
-                                <p class="md-body-2" layout-align="center center">
-                                    <i class="material-icons">room</i> Sclub <br />
-                                    <i class="material-icons">audiotrack</i> Hip Hop | Trap | R&B <br />
-                                    <i class="material-icons">child_care</i> Mindestalter: 16 Jahre
-                                </p>
-                                <div class="price" md-colors="{background:'accent'}" md-whiteframe="1">13.00 €</div>
-                            </div>
-                        </md-card-content>
-                    </md-card>
-
-                    <md-card flex="30">
-                        <img ng-src="https://material.angularjs.org/latest/img/washedout.png" class="md-card-image" alt="Washed Out">
-                        <md-card-content>
-                            <div layout layout-align="space-around center">
-                                <h2 class="md-title">White Night</h2>
-                                <h3 class="md-subhead">23. November</h3>
-                            </div>
-                            <md-divider></md-divider>
-                            <div layout layout-align="space-between end">
-                                <p class="md-body-2" layout-align="center center">
-                                    <i class="material-icons">room</i> Sclub <br />
-                                    <i class="material-icons">audiotrack</i> Hip Hop | Trap | R&B <br />
-                                    <i class="material-icons">child_care</i> Mindestalter: 16 Jahre
-                                </p>
-                                <div class="price" md-colors="{background:'accent'}" md-whiteframe="1">13.00 €</div>
-                            </div>
-                        </md-card-content>
-                    </md-card>
+                    <h2 class="md-title">{{events[$index].titel}}</h2>
+                    <h3 class="md-subhead">{{ events[$index].datum | date : 'EEEE, d. LLLL'}}</h3>
                 </div>
-
-
-                 <md-subheader class="md-primary">Morgen</md-subheader>
-                 <div layout layout-align="space-around center">
-                    <md-card flex="30">
-                        <img ng-src="https://material.angularjs.org/latest/img/washedout.png" class="md-card-image" alt="Washed Out">
-                        <md-card-content>
-                            <div layout layout-align="space-around center">
-                                <h2 class="md-title">White Night</h2>
-                                <h3 class="md-subhead">23. November</h3>
-                            </div>
-                            <md-divider></md-divider>
-                            <div layout layout-align="space-between end">
-                                <p class="md-body-2" layout-align="center center">
-                                    <i class="material-icons">room</i> Sclub <br />
-                                    <i class="material-icons">audiotrack</i> Hip Hop | Trap | R&B <br />
-                                    <i class="material-icons">child_care</i> Mindestalter: 16 Jahre
-                                </p>
-                                <div class="price" md-colors="{background:'accent'}" md-whiteframe="1">13.00 €</div>
-                            </div>
-                        </md-card-content>
-                    </md-card>
-
-                    <md-card flex="30">
-                        <img ng-src="https://material.angularjs.org/latest/img/washedout.png" class="md-card-image" alt="Washed Out">
-                        <md-card-content>
-                            <div layout layout-align="space-around center">
-                                <h2 class="md-title">White Night</h2>
-                                <h3 class="md-subhead">23. November</h3>
-                            </div>
-                            <md-divider></md-divider>
-                            <div layout layout-align="space-between end">
-                                <p class="md-body-2" layout-align="center center">
-                                    <i class="material-icons">room</i> Sclub <br />
-                                    <i class="material-icons">audiotrack</i> Hip Hop | Trap | R&B <br />
-                                    <i class="material-icons">child_care</i> Mindestalter: 16 Jahre
-                                </p>
-                                <div class="price" md-colors="{background:'accent'}" md-whiteframe="1">13.00 €</div>
-                            </div>
-                        </md-card-content>
-                    </md-card>
-
-                    <md-card flex="30">
-                        <img ng-src="https://material.angularjs.org/latest/img/washedout.png" class="md-card-image" alt="Washed Out">
-                        <md-card-content>
-                            <div layout layout-align="space-around center">
-                                <h2 class="md-title">White Night</h2>
-                                <h3 class="md-subhead">23. November</h3>
-                            </div>
-                            <md-divider></md-divider>
-                            <div layout layout-align="space-between end">
-                                <p class="md-body-2" layout-align="center center">
-                                    <i class="material-icons">room</i> Sclub <br />
-                                    <i class="material-icons">audiotrack</i> Hip Hop | Trap | R&B <br />
-                                    <i class="material-icons">child_care</i> Mindestalter: 16 Jahre
-                                </p>
-                                <div class="price" md-colors="{background:'accent'}" md-whiteframe="1">13.00 €</div>
-                            </div>
-                        </md-card-content>
-                    </md-card>
+                <md-divider></md-divider>
+                <div layout layout-align="space-between end">
+                    <p class="md-body-2" layout-align="center center">
+                        <i class="material-icons">room</i> Sclub <br />
+                        <i class="material-icons">audiotrack</i> Hip Hop | Trap | R&B <br />
+                        <i class="material-icons">child_care</i> Mindestalter: 16 Jahre
+                    </p>
+                    <div class="price" md-colors="{background:'accent'}" md-whiteframe="1">13.00 €</div>
                 </div>
-                 <div layout layout-align="space-around center">
-                    <md-card flex="30">
-                        <img ng-src="https://material.angularjs.org/latest/img/washedout.png" class="md-card-image" alt="Washed Out">
-                        <md-card-content>
-                            <div layout layout-align="space-around center">
-                                <h2 class="md-title">White Night</h2>
-                                <h3 class="md-subhead">23. November</h3>
-                            </div>
-                            <md-divider></md-divider>
-                            <div layout layout-align="space-between end">
-                                <p class="md-body-2" layout-align="center center">
-                                    <i class="material-icons">room</i> Sclub <br />
-                                    <i class="material-icons">audiotrack</i> Hip Hop | Trap | R&B <br />
-                                    <i class="material-icons">child_care</i> Mindestalter: 16 Jahre
-                                </p>
-                                <div class="price" md-colors="{background:'accent'}" md-whiteframe="1">13.00 €</div>
-                            </div>
-                        </md-card-content>
-                    </md-card>
-
-                    <md-card flex="30">
-                        <img ng-src="https://material.angularjs.org/latest/img/washedout.png" class="md-card-image" alt="Washed Out">
-                        <md-card-content>
-                            <div layout layout-align="space-around center">
-                                <h2 class="md-title">White Night</h2>
-                                <h3 class="md-subhead">23. November</h3>
-                            </div>
-                            <md-divider></md-divider>
-                            <div layout layout-align="space-between end">
-                                <p class="md-body-2" layout-align="center center">
-                                    <i class="material-icons">room</i> Sclub <br />
-                                    <i class="material-icons">audiotrack</i> Hip Hop | Trap | R&B <br />
-                                    <i class="material-icons">child_care</i> Mindestalter: 16 Jahre
-                                </p>
-                                <div class="price" md-colors="{background:'accent'}" md-whiteframe="1">13.00 €</div>
-                            </div>
-                        </md-card-content>
-                    </md-card>
-
-                    <md-card flex="30">
-                        <img ng-src="https://material.angularjs.org/latest/img/washedout.png" class="md-card-image" alt="Washed Out">
-                        <md-card-content>
-                            <div layout layout-align="space-around center">
-                                <h2 class="md-title">White Night</h2>
-                                <h3 class="md-subhead">23. November</h3>
-                            </div>
-                            <md-divider></md-divider>
-                            <div layout layout-align="space-between end">
-                                <p class="md-body-2" layout-align="center center">
-                                    <i class="material-icons">room</i> Sclub <br />
-                                    <i class="material-icons">audiotrack</i> Hip Hop | Trap | R&B <br />
-                                    <i class="material-icons">child_care</i> Mindestalter: 16 Jahre
-                                </p>
-                                <div class="price" md-colors="{background:'accent'}" md-whiteframe="1">13.00 €</div>
-                            </div>
-                        </md-card-content>
-                    </md-card>
+            </md-card-content>
+        </md-card>
+        <md-card flex="30" ng-if="$index + 1 < events.length">
+            <img ng-src="https://material.angularjs.org/latest/img/washedout.png" class="md-card-image" alt="Washed Out">
+            <md-card-content>
+                <div layout layout-align="space-around center">
+                    <h2 class="md-title">{{events[$index+1].titel}}</h2>
+                    <h3 class="md-subhead">{{events[$index+1].datum | date : 'EEEE, d. LLLL'}}</h3>
                 </div>
+                <md-divider></md-divider>
+                <div layout layout-align="space-between end">
+                    <p class="md-body-2" layout-align="center center">
+                        <i class="material-icons">room</i> Sclub <br />
+                        <i class="material-icons">audiotrack</i> Hip Hop | Trap | R&B <br />
+                        <i class="material-icons">child_care</i> Mindestalter: 16 Jahre
+                    </p>
+                    <div class="price" md-colors="{background:'accent'}" md-whiteframe="1">13.00 €</div>
+                </div>
+            </md-card-content>
+        </md-card>
+        <md-card flex="30" ng-if="$index + 1 < events.length">
+            <img ng-src="https://material.angularjs.org/latest/img/washedout.png" class="md-card-image" alt="Washed Out">
+            <md-card-content>
+                <div layout layout-align="space-around center">
+                    <h2 class="md-title">{{events[$index+2].titel}}</h2>
+                    <h3 class="md-subhead">{{ events[$index+2].datum | date : 'EEEE, d. LLLL'}}</h3>
+                </div>
+                <md-divider></md-divider>
+                <div layout layout-align="space-between end">
+                    <p class="md-body-2" layout-align="center center">
+                        <i class="material-icons">room</i> Sclub <br />
+                        <i class="material-icons">audiotrack</i> Hip Hop | Trap | R&B <br />
+                        <i class="material-icons">child_care</i> Mindestalter: 16 Jahre
+                    </p>
+                    <div class="price" md-colors="{background:'accent'}" md-whiteframe="1">13.00 €</div>
+                </div>
+            </md-card-content>
+        </md-card>
+    </div>
+</div>
 
 
 

@@ -1,13 +1,8 @@
 from django.views import generic, View
-from django.contrib.auth.mixins import LoginRequiredMixin
-from django.http import HttpResponseRedirect
-from django.contrib.auth import logout, authenticate, login
-from django.shortcuts import redirect, render, get_object_or_404
-from django.urls import reverse_lazy
-from datetime import datetime
-
-from .models import Event, Kategorie
-from .forms import LoginForm, EventForm
+from rest_framework import permissions
+from events.models import Event
+from events.serializers import EventSerializer
+from rest_framework import generics
 
 class IndexView(generic.ListView):
     template_name = 'events/base.html'
@@ -16,8 +11,14 @@ class IndexView(generic.ListView):
     def get_queryset(self):
         return Event.objects.all()
 
+class Angular():
+    print('jo');
 
-
+# Event Model
+class EventList(generics.ListCreateAPIView):
+    permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
+    queryset = Event.objects.all()
+    serializer_class = EventSerializer
 
 
 

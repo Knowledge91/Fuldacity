@@ -12,21 +12,35 @@
 
 		<title>Fuldacity</title>
 
-        <script type="text/javascript" src="{% static 'bower_components/angular/angular.min.js' %}"></script>
+        <script src="//maps.google.com/maps/api/js?libraries=placeses,visualization,drawing,geometry,places"></script>
+
+
+        <script src="{% static 'bower_components/angular/angular.min.js' %}"></script>
         <script src="{% static 'bower_components/angular-resource/angular-resource.min.js' %}"></script>
-		<script type="text/javascript" src="{% static 'bower_components/angular-animate/angular-animate.min.js' %}"></script>
-		<script type="text/javascript" src="{% static 'bower_components/angular-aria/angular-aria.min.js' %}"></script>
-		<script type="text/javascript" src="{% static 'bower_components/angular-messages/angular-messages.min.js' %}"></script>
-		<script type="text/javascript" src="{% static 'bower_components/angular-material/angular-material.min.js' %}"></script>
-        <script type="text/javascript" src="{% static 'bower_components/angular-route/angular-route.min.js' %}"></script>
+		<script src="{% static 'bower_components/angular-animate/angular-animate.min.js' %}"></script>
+		<script src="{% static 'bower_components/angular-aria/angular-aria.min.js' %}"></script>
+		<script src="{% static 'bower_components/angular-messages/angular-messages.min.js' %}"></script>
+		<script src="{% static 'bower_components/angular-material/angular-material.min.js' %}"></script>
+        <script src="{% static 'bower_components/angular-route/angular-route.min.js' %}"></script>
+        <script src="{% static 'bower_components/ngmap/build/scripts/ng-map.min.js' %}"></script>
+
+        <!-- Language -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-i18n/1.5.9/angular-locale_de-de.min.js"></script>
+
+
 
         <script src="{% static 'events/js/app.module.js' %}"></script>
         <script src="{% static 'events/js/app.config.js' %}"></script>
 
+        <!-- img crop -->
+        <script src="{% static 'bower_components/ui-cropper/compile/minified/ui-cropper.js' %}"></script>
+        <link rel="stylesheet" type="text/css" href="{% static 'bower_components/ui-cropper/compile/minified/ui-cropper.css' %}">
+
         <script src="{% static 'events/js/core/core.module.js' %}"></script>
-        <script src="{% static 'events/js/core/rest-auth/rest-auth.module.js' %}"></script>
-        <script src="{% static 'events/js/core/rest-auth/rest-auth.service.js' %}"></script>
         <script src="{% static 'events/js/core/authentication/authentication.module.js' %}"></script>
+        <script src="{% static 'events/js/core/authentication/authentication.service.js' %}"></script>
+        <script src="{% static 'events/js/core/events/events.module.js' %}"></script>
+        <script src="{% static 'events/js/core/events/events.service.js' %}"></script>
         <script src="{% static 'events/js/core/dialog/dialog.module.js' %}"></script>
         <script src="{% static 'events/js/core/dialog/dialog.service.js' %}"></script>
 
@@ -35,6 +49,9 @@
 
         <script src="{% static 'events/js/event-list/event-list.module.js' %}"></script>
         <script src="{% static 'events/js/event-list/event-list.component.js' %}"></script>
+
+        <script src="{% static 'events/js/event-add/event-add.module.js' %}"></script>
+        <script src="{% static 'events/js/event-add/event-add.component.js' %}"></script>
 	</head>
 <body ng-cloak >
     <div layout="column"  layout-fill="layout-fill" ng-cloak>
@@ -45,7 +62,7 @@
                         <md-icon aria-label="Menu" class="material-icons">tune</md-icon>
                     </md-button>
                     <h3>Fuldacity</h3>
-                    <md-button>Events</md-button>
+                    <a href="#/"><md-button>Events</md-button></a>
                     <md-button ng-click="toolbarCtrl.showStatus()">Locations</md-button>
                 </div>
 
@@ -53,8 +70,11 @@
                 <input flex="40" ng-change="toolbarCtrl.validateSearch()" ng-focus="toolbarCtrl.focusSearch()" ng-blur="toolbarCtrl.defocusSearch()" ng-class="searchClass" class="searchbar" ng-model="search" placeholder="Such Veranstaltungen, Locations & mehr...">
 
                 <div>
-                    <md-button ng-hide="restAuth.authenticated" ng-click="toolbarCtrl.showLogin()">Login</md-button>
-                    <md-button ng-show="restAuth.authenticated" ng-click="toolbarCtrl.logout()">Logout</md-button>
+                    <md-button ng-hide="auth.authenticated" ng-click="toolbarCtrl.showRegister()">Register</md-button>
+                    <md-button ng-hide="auth.authenticated" ng-click="toolbarCtrl.showLogin()">Login</md-button>
+
+                    <a href="#/event/add"><md-button ng-show="auth.authenticated"><md-icon class="material-icons">add_circle_outline</md-icon></md-button></a>
+                    <md-button ng-show="auth.authenticated" ng-click="toolbarCtrl.logout()">Logout</md-button>
                 </div>
             </div>
         </md-toolbar>
