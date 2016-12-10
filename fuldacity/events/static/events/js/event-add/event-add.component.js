@@ -1,11 +1,37 @@
 angular.module('eventAdd').
     component('eventAdd', {
         templateUrl: '/static/events/js/event-add/event-add.template.html',
-        controller: ['$location', '$scope', '$resource', 'NgMap', 'eventsService',
-            function DemoCtrl ($location, $scope, $resource, NgMap, events) {
+        controller: ['$location', '$scope', '$resource', 'NgMap', 'eventsService', '$mdpDatePicker', '$mdpTimePicker',
+            function DemoCtrl ($location, $scope, $resource, NgMap, events, $mdpDatePicker, $mdpTimePicker) {
+
+             $scope.currentDate = new Date();
+  	this.showDatePicker = function(ev) {
+    	$mdpDatePicker($scope.currentDate, {
+        targetEvent: ev
+      }).then(function(selectedDate) {
+        $scope.currentDate = selectedDate;
+      });;
+    };
+
+    this.filterDate = function(date) {
+      return moment(date).date() % 2 == 0;
+    };
+
+                this.showTimePicker = function(ev) {
+                    console.log('jo');
+                    $mdpTimePicker($scope.currentTime, {
+                    targetEvent: ev
+                  }).then(function(selectedDate) {
+                    $scope.currentTime = selectedDate;
+                  });
+                }
+
+
                 $scope.forms = {};
                 var self = this;
 
+
+                // NGMAP PLACES
                 var vm = this;
                 vm.types = "['address']";
                 NgMap.getMap().then(function(map) {
@@ -20,7 +46,11 @@ angular.module('eventAdd').
                                 form.address.$error.validationError = false;
                                 form.address.$setPristine();
                                 form.address.$setValidity();
-                                // vm.map.setCenter(vm.place.geometry.location);
+
+                                console.log('location', vm.place.geometry.location);
+                                $scope.markerLatitude = vm.place.geometry.location.lat();
+                                $scope.markerLongitude = vm.place.geometry.location.lng();
+                                vm.map.setCenter(vm.place.geometry.location);
                             } else {
                                 form.address.$error.validationError = true;
                                  console.log(form.address.class);
@@ -28,9 +58,11 @@ angular.module('eventAdd').
                             }
 
                         };
-                        // form.address.$error.validationError = true;
+                        form.address.$error.validationError = true;
                     }
                 });
+
+
 
                 self.kategories = ['House', 'Hip Hop', 'Charts'];
 
@@ -54,7 +86,11 @@ angular.module('eventAdd').
                   };
                   reader.readAsDataURL(file);
                 };
-                  angular.element(document.querySelector('#fileInput')).on('change',handleFileSelect);
+                angular.element(document.querySelector('#fileInput')).on('change',handleFileSelect);
+
+
+
+
 
             }
         ]

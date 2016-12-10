@@ -5,12 +5,15 @@
       height:250px;
     }
   </style>
+
+
 <md-subheader class="md-primary">Pflichtfelder:</md-subheader>
-<div layout layout-align="space-around start">
+<div layout layout-align="space-around center">
     <div flex="60">
         <form name="forms.form" >
-            <div layout-gt-xs="row">
-                <md-input-container class="md-block" flex-gt-xs>
+
+            <div layout="row">
+                <md-input-container class="md-block" flex>
                     <label>Titel</label>
                     <input required name="titel" ng-model="$ctrl.titel">
                     <div ng-messages="forms.form.titel.$error">
@@ -20,7 +23,7 @@
                     </div>
                 </md-input-container>
 
-                <md-input-container class="md-block" flex-gt-xs>
+                <md-input-container class="md-block" flex>
                     <label>Location: </label>
                     <input required name="location" ng-model="$ctrl.location">
                     <div ng-messages="forms.form.location.$error">
@@ -29,10 +32,42 @@
                         </div>
                     </div>
                 </md-input-container>
+            </div>
 
-                <md-input-container>
-                    <label>Datum</label>
+
+            <div layout="row" layout-align="center center">
+                <md-input-container flex>
+                    <label>Begin Datum</label>
                     <md-datepicker  ng-model="$ctrl.datum" ></md-datepicker>
+                    <div ng-messages="forms.form.datum.$error">
+                        <div ng-message="required">
+                            Geben Sie eine Datum ein.
+                        </div>
+                    </div>
+                </md-input-container>
+
+                <md-input-container flex>
+                    <label>Beginn Uhrzeit</label>
+                    <input type="time" ng-model="test" mdp-time-picker />
+                    <div ng-messages="forms.form.datum.$error">
+                        <div ng-message="required">
+                            Geben Sie eine Datum ein.
+                        </div>
+                    </div>
+                </md-input-container>
+
+                <md-input-container flex>
+                    <label>Ende Datum</label>
+                    <md-datepicker  ng-model="$ctrl.datum" ></md-datepicker>
+                    <div ng-messages="forms.form.datum.$error">
+                        <div ng-message="required">
+                            Geben Sie eine Datum ein.
+                        </div>
+                    </div>
+                </md-input-container>
+                <md-input-container flex>
+                    <label>Ende Uhrzeit</label>
+                    <input type="time" ng-model="test" mdp-time-picker />
                     <div ng-messages="forms.form.datum.$error">
                         <div ng-message="required">
                             Geben Sie eine Datum ein.
@@ -41,17 +76,24 @@
                 </md-input-container>
             </div>
 
-            <div layout="column" layout-align="center center" class="cropArea">
-                <ui-cropper image="myImage" area-type="rectangle" aspect-ratio="2" result-image="myCroppedImage" result-image-size='{w: 400,h: 200}' init-max-area="true"></ui-cropper>
-            </div>
-            <div>
+
+
+
+            <div style="margin-bottom: 40px">
+                <div class="cropArea">
+                    <ui-cropper  image="myImage" area-type="rectangle" aspect-ratio="2" result-image="myCroppedImage" result-image-size='{w: 400,h: 200}' init-max-area="true"></ui-cropper>
+                </div>
+                <label for="fileInput"   class="md-button md-raised md-primary">Browse</label>
+
                 <input class="ng-hide" id="fileInput" multiple type="file" />
-                <label for="fileInput" class="md-button md-raised md-primary">Browse</label> Bild hinzufügen
             </div>
 
 
 
-            <md-input-container class="md-block">
+
+
+
+            <md-input-container class="md-block" style="margin-bottom: 40px">
                 <label>Address</label>
                 <input places-auto-complete size=80
                        required
@@ -67,7 +109,13 @@
                         Wählen Sie eine Adresse aus der vorgeschlagenenen Liste via Klick aus.
                     </div>
                 </div>
+
+                <ng-map center="50.5558095,9.680844900000011">
+                    <marker position="{{markerLatitude}}, {{markerLongitude}}" title="Location"></marker>
+                </ng-map>
             </md-input-container>
+
+
 
             <md-input-container class="md-block">
                 <label>Beschreibung</label>
@@ -79,27 +127,11 @@
                 </div>
             </md-input-container>
 
-            <div layout-gt-xs="row">
-                <md-input-container class="md-block">
-                    <label>Mindestalter: </label>
-                    <input ng-model="$ctrl.mindestalter">
-                </md-input-container>
-            </div>
-
-            <md-input-container class="md-block">
-                <label>Musikgenre:</label>
-                <md-chips
-                    ng-model="$ctrl.kategories"
-                    placeholder="Musikgenre hinzufügen"
-                    secondary-placeholder="+Rock"
-                    md-enable-chip-edit="true">
-                </md-chips>
-            </md-input-container>
       </form>
     </div>
 
     <div layout="column" layout-align="center center" flex="30">
-        <md-card>
+        <md-card style="width: 100%">
             <img ng-src="{{myCroppedImage}}" class="md-card-image" alt="Washed Out">
             <md-card-content>
                 <div layout layout-align="space-around center">
@@ -117,6 +149,21 @@
                 </div>
             </md-card-content>
         </md-card>
+        <md-card style="width:100%">
+               <md-card-content>
+                <div layout layout-align="space-around center">
+                    <h2 class="md-title">{{ $ctrl.titel }}</h2>
+                    <h3 class="md-subhead">{{ $ctrl.datum | date : 'EEEE, d. LLLL'}}</h3>
+                </div>
+                <md-divider></md-divider>
+                <div layout layout-align="space-between end">
+                    <p class="md-body-2" layout-align="center center">
+                        {{$ctrl.beschreibung}}
+                    </p>
+                    <div class="price" md-colors="{background:'accent'}" md-whiteframe="1">13.00 €</div>
+                </div>
+            </md-card-content>
+      </md-card>
 
         <div>
             <md-button type="submit" class="md-raised md-primary" ng-click="$ctrl.erstellen()">Erstellen</md-button>
@@ -124,6 +171,34 @@
     </div>
 
 
+
+
+</div>
+
+<md-subheader class="md-primary">Optionale Felder:</md-subheader>
+<div layout layout-align="space-around start">
+    <div flex="60">
+
+            <div layout-gt-xs="row">
+                <md-input-container class="md-block">
+                    <label>Mindestalter: </label>
+                    <input ng-model="$ctrl.mindestalter">
+                </md-input-container>
+            </div>
+
+            <md-input-container class="md-block">
+                <label>Musikgenre:</label>
+                <md-chips
+                    ng-model="$ctrl.kategories"
+                    placeholder="Musikgenre hinzufügen"
+                    secondary-placeholder="+Rock"
+                    md-enable-chip-edit="true">
+                </md-chips>
+            </md-input-container>
+    </div>
+    <div flex="30">
+
+    </div>
 </div>
 
 

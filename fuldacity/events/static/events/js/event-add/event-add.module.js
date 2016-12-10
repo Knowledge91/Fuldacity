@@ -1,2 +1,2 @@
 angular.
-    module('eventAdd', ['ngMap', 'uiCropper']);
+    module('eventAdd', ['ngMap', 'uiCropper', 'mdPickers']);
