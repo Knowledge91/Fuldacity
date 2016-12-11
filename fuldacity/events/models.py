@@ -9,7 +9,13 @@ class Kategorie(models.Model):
 
 class Event(models.Model):
     titel = models.CharField(max_length=100, default="Neues Event")
-    datum = models.DateTimeField(default=datetime.datetime.now())
+    location = models.CharField(max_length=100, default="Location")
+    beginn = models.DateTimeField(default=datetime.datetime.now())
+    ende = models.DateTimeField(default=datetime.datetime.now())
+    beschreibung = models.CharField(max_length=1000, default="Beschreibung")
+    mindestalter = models.IntegerField(null=True)
+    kategorien = models.CharField(max_length=200, null=True);
+
 
     def __str__(self):
         return self.name

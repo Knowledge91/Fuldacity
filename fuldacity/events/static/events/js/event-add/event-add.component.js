@@ -64,10 +64,18 @@ angular.module('eventAdd').
 
 
 
-                self.kategories = ['House', 'Hip Hop', 'Charts'];
+                self.kategorien = ['House', 'Hip Hop', 'Charts'];
 
                 self.erstellen = function() {
-                    events.eventList.save({titel: self.titel, datum: self.datum});
+                    beginnDatum = moment(self.beginnDatum);
+                    beginnUhrzeit = moment(self.beginnUhrzeit);
+                    beginn = moment(beginnDatum.format('YYYY-MM-DD')+' '+beginnUhrzeit.format('h:mm'), "YYYY-MM-DD h:mm");
+
+                    endeDatum = moment(self.endeDatum);
+                    endeUhrzeit = moment(self.endeUhrzeit);
+                    ende = moment(endeDatum.format('YYYY-MM-DD')+' '+endeUhrzeit.format('h:mm'), "YYYY-MM-DD h:mm");
+
+                    events.eventList.save({titel: self.titel, location: self.location, beginn: beginn, ende: ende, beschreibung: self.beschreibung, mindestalter: self.mindestalter, kategorien: self.kategorien.toString()});
                     $location.path('/')
                 };
 

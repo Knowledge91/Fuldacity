@@ -32,14 +32,44 @@
     color: white;
 }
 
+i {
+    vertical-align: middle !important;
+}
+
+/*md-card image*/
+.md-card-image-container {
+    background: rgba(0, 0, 0, 1);
+    position: relative;
+    cursor: pointer;
+}
+.md-card-image-container:hover .md-card-image {
+    opacity: 0.3;
+}
+.md-card-image-icon {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 5.9vw;
+}
+.md-card-image-icon:hover {
+    font-size: 7vw;
+    opacity: 0.9;
+}
+.md-card-image-container:hover .md-card-image-icon { display: block; }
+.md-card-backIcon {
+    float: left;
+}
+
 md-card-content .price {
     padding: 10px;
     border-radius: 2px;
     color: white;
 }
 
-i {
-    vertical-align: middle !important;
+.md-body-2 i {
     font-size: 16px !important;
 }
 /*-------------------------------------------------------------------------*/

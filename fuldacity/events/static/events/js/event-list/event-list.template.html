@@ -1,58 +1,132 @@
 <div ng-repeat="(date, events) in eventList">
     <md-subheader class="md-primary">{{date | date: 'fullDate'}}</md-subheader>
-    <div layout layout-align="space-around center" ng-repeat="event in events" ng-if="$index % 3 == 0">
-        <md-card flex="30">
-            <img ng-src="https://material.angularjs.org/latest/img/washedout.png" class="md-card-image" alt="Washed Out">
+    <div layout layout-align="space-around stretch" flex ng-repeat="event in events" ng-if="$index % 3 == 0">
+        <md-card ng-show="showEventDetails[events[$index].id]" ng-init="showEventDetails[events[$index].id]=true" flex="30">
+            <div ng-click="showEventDetails[events[$index].id]=false" layout flex class="md-card-image-container" >
+                <img ng-src="https://material.angularjs.org/latest/img/washedout.png" class="md-card-image" alt="Washed Out" flex>
+                <i class="material-icons md-card-image-icon">add_circle_outline</i>
+            </div>
             <md-card-content>
                 <div layout layout-align="space-around center">
                     <h2 class="md-title">{{events[$index].titel}}</h2>
-                    <h3 class="md-subhead">{{ events[$index].datum | date : 'EEEE, d. LLLL'}}</h3>
+                    <h3 class="md-subhead">{{ events[$index].beginn | date : 'EEEE, d. LLLL'}}</h3>
                 </div>
                 <md-divider></md-divider>
                 <div layout layout-align="space-between end">
                     <p class="md-body-2" layout-align="center center">
-                        <i class="material-icons">room</i> Sclub <br />
+                        <i class="material-icons">room</i> {{events[$index].location}} <br />
                         <i class="material-icons">audiotrack</i> Hip Hop | Trap | R&B <br />
-                        <i class="material-icons">child_care</i> Mindestalter: 16 Jahre
+                        <span ng-if="events[$index].mindestalter">
+                            <i class="material-icons">child_care</i> Mindestalter: {{events[$index].mindestalter}} Jahre
+                        </span>
                     </p>
+
                     <div class="price" md-colors="{background:'accent'}" md-whiteframe="1">13.00 €</div>
                 </div>
             </md-card-content>
         </md-card>
-        <md-card flex="30" ng-if="$index + 1 < events.length">
-            <img ng-src="https://material.angularjs.org/latest/img/washedout.png" class="md-card-image" alt="Washed Out">
+        <md-card layout layout-align="center stretch" ng-hide="showEventDetails[events[$index].id]" flex="30">
+            <md-card-content layout="column" layout-align="space-between stretch" flex>
+                    <div layout="column">
+                        <div layout layout-align="space-between center" flex>
+                            <md-button class="pointer" ng-click="showEventDetails[events[$index].id]=true"><i class="material-icons">arrow_back</i></md-button>
+                            <h2 class="md-title">{{events[$index].titel}}</h2>
+                            <h3 class="md-subhead">{{ events[$index].datum | date : 'EEEE, d. LLLL'}}</h3>
+                        </div>
+                        <md-divider></md-divider>
+                    </div>
+                    <div layout layout-align="start stretch" flex>
+                         <p class="md-body-2">
+                            {{events[$index].beschreibung}}
+                        </p>
+                    </div>
+                    <div layout layout-align="end end">
+                        <div class="price" md-colors="{background:'accent'}" md-whiteframe="1">13.00 €</div>
+                    </div>
+            </md-card-content>
+        </md-card>
+        <md-card ng-if="$index+1 < events.length" ng-show="showEventDetails[events[$index+1].id]" ng-init="showEventDetails[events[$index+1].id]=true" flex="30">
+            <div ng-click="showEventDetails[events[$index+1].id]=false" layout flex class="md-card-image-container" >
+                <img ng-src="https://material.angularjs.org/latest/img/washedout.png" class="md-card-image" alt="Washed Out" flex>
+                <i class="material-icons md-card-image-icon">add_circle_outline</i>
+            </div>
             <md-card-content>
                 <div layout layout-align="space-around center">
-                    <h2 class="md-title">{{events[$index+1].titel}}</h2>
-                    <h3 class="md-subhead">{{events[$index+1].datum | date : 'EEEE, d. LLLL'}}</h3>
+                    <h2 class="md-title"> {{events[$index+1].titel}}</h2>
+                    <h3 class="md-subhead">{{ events[$index+1].beginn | date : 'EEEE, d. LLLL'}}</h3>
                 </div>
                 <md-divider></md-divider>
                 <div layout layout-align="space-between end">
                     <p class="md-body-2" layout-align="center center">
                         <i class="material-icons">room</i> Sclub <br />
                         <i class="material-icons">audiotrack</i> Hip Hop | Trap | R&B <br />
-                        <i class="material-icons">child_care</i> Mindestalter: 16 Jahre
+                        <i class="material-icons">child_care</i> Mindestalter: 16 Jahre <span ng-click="showEventDetails[events[$index+1].id]=false">click</span>
                     </p>
+
                     <div class="price" md-colors="{background:'accent'}" md-whiteframe="1">13.00 €</div>
                 </div>
             </md-card-content>
         </md-card>
-        <md-card flex="30" ng-if="$index + 1 < events.length">
-            <img ng-src="https://material.angularjs.org/latest/img/washedout.png" class="md-card-image" alt="Washed Out">
+        <md-card ng-if="$index+1 < events.length" layout layout-align="center stretch" ng-hide="showEventDetails[events[$index+1].id]" flex="30">
+            <md-card-content layout="column" layout-align="space-between stretch" flex>
+                    <div layout="column">
+                        <div layout layout-align="space-between center" flex>
+                            <md-button class="pointer" ng-click="showEventDetails[events[$index+1].id]=true"><i class="material-icons">arrow_back</i></md-button>
+                            <h2 class="md-title">{{events[$index+1].titel}}</h2>
+                            <h3 class="md-subhead">{{ events[$index+1].datum | date : 'EEEE, d. LLLL'}}</h3>
+                        </div>
+                        <md-divider></md-divider>
+                    </div>
+                    <div layout layout-align="start stretch" flex>
+                         <p class="md-body-2">
+                            {{events[$index+1].beschreibung}}
+                        </p>
+                    </div>
+                    <div layout layout-align="end end">
+                        <div class="price" md-colors="{background:'accent'}" md-whiteframe="1">13.00 €</div>
+                    </div>
+            </md-card-content>
+        </md-card>
+        <md-card ng-if="$index+2 < events.length" ng-show="showEventDetails[events[$index+2].id]" ng-init="showEventDetails[events[$index+2].id]=true" flex="30">
+            <div ng-click="showEventDetails[events[$index+2].id]=false" layout flex class="md-card-image-container" >
+                <img ng-src="https://material.angularjs.org/latest/img/washedout.png" class="md-card-image" alt="Washed Out" flex>
+                <i class="material-icons md-card-image-icon">add_circle_outline</i>
+            </div>
             <md-card-content>
                 <div layout layout-align="space-around center">
                     <h2 class="md-title">{{events[$index+2].titel}}</h2>
-                    <h3 class="md-subhead">{{ events[$index+2].datum | date : 'EEEE, d. LLLL'}}</h3>
+                    <h3 class="md-subhead">{{ events[$index+2].beginn | date : 'EEEE, d. LLLL'}}</h3>
                 </div>
                 <md-divider></md-divider>
                 <div layout layout-align="space-between end">
                     <p class="md-body-2" layout-align="center center">
                         <i class="material-icons">room</i> Sclub <br />
                         <i class="material-icons">audiotrack</i> Hip Hop | Trap | R&B <br />
-                        <i class="material-icons">child_care</i> Mindestalter: 16 Jahre
+                        <i class="material-icons">child_care</i> Mindestalter: 16 Jahre <span ng-click="showEventDetails[events[$index+2].id]=false">click</span>
                     </p>
+
                     <div class="price" md-colors="{background:'accent'}" md-whiteframe="1">13.00 €</div>
                 </div>
+            </md-card-content>
+        </md-card>
+        <md-card ng-if="$index+2 < events.length" layout layout-align="center stretch" ng-hide="showEventDetails[events[$index+2].id]" flex="30">
+            <md-card-content layout="column" layout-align="space-between stretch" flex>
+                    <div layout="column">
+                        <div layout layout-align="space-between center" flex>
+                            <md-button class="pointer" ng-click="showEventDetails[events[$index+2].id]=true"><i class="material-icons">arrow_back</i></md-button>
+                            <h2 class="md-title">{{events[$index+2].titel}}</h2>
+                            <h3 class="md-subhead">{{ events[$index+2].datum | date : 'EEEE, d. LLLL'}}</h3>
+                        </div>
+                        <md-divider></md-divider>
+                    </div>
+                    <div layout layout-align="start stretch" flex>
+                         <p class="md-body-2">
+                            {{events[$index+2].beschreibung}}
+                        </p>
+                    </div>
+                    <div layout layout-align="end end">
+                        <div class="price" md-colors="{background:'accent'}" md-whiteframe="1">13.00 €</div>
+                    </div>
             </md-card-content>
         </md-card>
     </div>

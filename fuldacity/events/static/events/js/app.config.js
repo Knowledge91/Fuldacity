@@ -3,8 +3,8 @@ angular.
     config(['$mdThemingProvider', '$resourceProvider', '$locationProvider', '$routeProvider', '$httpProvider',
         function($mdThemingProvider, $resourceProvider, $locationProvider, $routeProvider, $httpProvider) {
             $mdThemingProvider.theme('default')
-            .primaryPalette('red')
-            .accentPalette('cyan');
+            // .primaryPalette('red')
+            // .accentPalette('cyan');
 
             // CSRF TOKEN
             $httpProvider.defaults.xsrfCookieName = 'csrftoken';
